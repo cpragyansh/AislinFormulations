@@ -370,7 +370,7 @@
 }
 
 /* For Large Screens (1200px to 1920px) */
-@media (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1200px) and (max-width: 3920px) {
   .section-2-main-container {
     /* padding: 4em; */
   }
