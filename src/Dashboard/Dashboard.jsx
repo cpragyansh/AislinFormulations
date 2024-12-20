@@ -254,7 +254,7 @@ export default function Dashboard() {
               {[
                 { heading: "Environment Friendly", description: "Driving innovation to meet modern healthcare challenges." },
                 { heading: " Zero Debt Company ", description: "Pioneering research to deliver cutting-edge formulations." },
-                { heading: "Sustainable Practices", description: "A commitment to eco-friendly and sustainable manufacturing involves integrating environmentally responsible practices at every stage of production. This includes utilizing renewable energy sources, minimizing waste through efficient processes, adopting circular economy principles, and sourcing sustainable raw materials. By prioritizing green technologies, reducing carbon emissions, and promoting ethical supply chain practices, we aim to create products that not only meet the highest quality standards but also contribute positively to the environment and society. This approach reflects our dedication to preserving natural resources for future generations while supporting a cleaner, healthier planet." },
+                { heading: "Sustainable Practices", description: "A commitment to eco-friendly and sustainable manufacturing" },
                 { heading: "Quality Assurance", description: "Ensuring the highest standards in every product we deliver." },
                 { heading: "Customized Services", description: "Tailored solutions to meet unique client requirements." },
                 { heading: "Global Standards", description: "Adhering to international benchmarks for excellence." }

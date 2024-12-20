@@ -1,6 +1,6 @@
 .navbar {
   /* background-color: #a00534; */
-  background-color: #0A67B8;
+  background-color: white;
   width: 100%;
   
   z-index: 9999999999999999;
@@ -12,7 +12,7 @@
   padding: 0;margin: 0;
   transition: background-color 0.3s ease;
   /* position: fixed; */
-  color: white;
+  color:black;
 }
 
 .navbar.scrolled {
@@ -58,9 +58,9 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: black;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   padding: 10px;
   display: flex;
@@ -320,83 +320,224 @@
 
 
 
-.navbar-days-time-block-main{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 2em;
-  /* background-color: rgb(210, 246, 246); */
 
-}
 
 a{
   text-decoration: none; /* Removes the underline */
   color: inherit; /* Inherits color from parent element */
 
 }
-.navbar-certifications-of-company{
+/* General Styles */
+.navbar-certifications-of-company {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 4em */
-  ;
-  padding-left: 12vh;
-  padding-right: 12vh;
-  
-  /* margin-left: 5em; */
+  height: 8vh;
+  padding: 1em 2vh;
+  border-bottom: 1px solid black;
+  flex-wrap: wrap;
 }
-.naavbar-certification-1-name
-{
+
+.naavbar-certification-1-name {
   color: black;
-  font-size: 28px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 0.5em;
 }
-.navbar-certifications-1-number{
+
+.navbar-certifications-1-number {
   color: black;
-font-size: 22px;
-text-align: end;
-margin-top: -0.5em;
-font-weight: 450;
-
-
-}
-/* Outer container */
-
-
-/* Inner radius (creating the curve on the right side) */
-
-
-.aislin-main-navbar-logo{
-height: 5vw;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  text-align: end;
+  margin-top: -0.5em;
+  font-weight: 450;
 }
 
-.gmp-certification-reward-logo{
-  height: 3vw;
-  /* mt */
-  /* width: 2vw; */
+.aislin-main-navbar-logo {
+  height: clamp(50px, 8vw, 80px);
 }
-.navbar-certifications-1{
+
+/* Images */
+.gmp-certification-reward-logo,
+.gmp-certificate-approved-logo {
+  height: clamp(30px, 6vw, 60px);
+}
+
+/* Certification Boxes */
+.navbar-certifications-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
-.navbar-certificate-title-head{
+
+.navbar-certificate-title-head {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
 }
-.gmp-certificate-approved-logo{
-  height: 7vh;
-}
-.nav-bar-certifications-main-main-box{
+
+.nav-bar-certifications-main-main-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4em;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+/* Navbar Days and Time */
+.navbar-days-flex-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navbar-days-time-block-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.5em 1em;
+}
+
+.navbar-days-time-contact-info-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  background-color: #5c5c5c;
+  width: 100%;
+  padding: 0.5em;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.days-and-time-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 1em;
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  padding: 0.5em;
+}
+
+.navbar-phone-number-section,
+.navbar-mail-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.navbar-phone-number-section {
+  border-right: 2px solid white;
+  padding-right: 1em;
+}
+
+/* Search Button */
+.search-container {
+  position: relative;
+}
+
+.search-button {
+  width: clamp(30px, 6vw, 50px);
+  height: clamp(30px, 6vw, 50px);
+  border: none;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button svg {
+  font-size: clamp(14px, 3vw, 18px);
+  color: #333;
+}
+
+.search-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .navbar-certifications-of-company {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar-certifications-main-main-box {
+    gap: 1.5em;
+  }
+
+  .navbar-days-flex-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-days-time-contact-info-container {
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+  .days-and-time-block {
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-days-time-block-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* padding: 0.5em 1em; */
+  }
   
+
+  .navbar-phone-number-section {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar-certifications-main-main-box {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .navbar-certifications-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-days-time-block-main {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .navbar-days-time-contact-info-container {
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 40px;
+  }
 }

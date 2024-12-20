@@ -7,9 +7,9 @@ export default function HeroSection() {
     {
       src: 'assets/edited.png',
       alt: 'Background 1',
-      heading1: 'Welcome to the',
-      heading2: 'Aislin',
-      subheading: 'Formulations',
+      heading1: 'Welcome to',
+      heading2: 'Aislin Formulations',
+      // subheading: 'Formulations',
       description:
         'Aislin Formulations is one of the leading manufacturers of Herbals, Nutraceutical and Food & dietary supplements products...',
     },
@@ -17,9 +17,9 @@ export default function HeroSection() {
     {
       src: '/assets/edited-4.png',
       alt: 'Background 3',
-      heading1: 'Innovating for a',
-      heading2: 'Healthier',
-      subheading: ' Living',
+      heading1: 'Innovating Healthier',
+      heading2: 'Healthier Living',
+      // subheading: ' ',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
@@ -27,8 +27,8 @@ export default function HeroSection() {
       src: '/assets/edited-5.png',
       alt: 'Background 3',
       heading1: 'Innovating for a',
-      heading2: 'Healthier',
-      subheading: ' Living',
+      heading2: 'Healthier  Living',
+      // subheading: '',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
@@ -36,8 +36,8 @@ export default function HeroSection() {
       src: '/assets/edited-6.png',
       alt: 'Background 3',
       heading1: 'Innovating for a',
-      heading2: 'Healthier',
-      subheading: ' Living',
+      heading2: 'Healthier Living',
+      // subheading: ' ',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
@@ -66,6 +66,7 @@ export default function HeroSection() {
         <h2 className="hero-aislin-head">{images[currentImageIndex].heading2}</h2>
         <h3 className="hero-formu-head">{images[currentImageIndex].subheading}</h3>
         <p className="hero-text-para">{images[currentImageIndex].description}</p>
+        <button className="hero-section-know-more-btn">KNOW MORE</button>
       </div>
 
       {/* Container with a full-screen height */}
