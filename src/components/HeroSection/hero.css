@@ -1,0 +1,186 @@
+.hero-main-box{
+    /* background-color:  #a00534; */
+    background-color: black;
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+    /* padding-bottom: 2em; */
+    /* padding-top: 4em; */
+    /* margin-top: 2em; */
+}
+.hero-main-2{
+ 
+    position: relative;
+    height: 100%;
+    display: flex;
+    /* flex-shrink: 0; */
+    flex-flow: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+
+
+}
+.images-hero-cont-test{
+width: 100%;
+height: 100%;
+display: flex;
+flex-shrink: 0;
+}
+.images-slider-main{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+
+    /* overflow: hidden; */
+}
+@media  (min-width:480px) and (max-width:768px){
+    .hero-main-box{
+        /* background-color:  #a00534; */
+        background-color: white;
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        position: relative;
+        /* padding-bottom: 2em; */
+        /* padding-top: 2em; */
+        /* margin-top: -5%; */
+    }
+}
+
+.hero-welcome-text{
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: 4px 3px 8px black;
+    font-weight: 600;
+}
+.hero-aislin-head{
+    font-size: 7rem;
+    color:#0A67B8;
+    font-weight: 400;
+    text-shadow: 4px 3px 8px black;
+    margin-top: -0.2em;
+}
+.hero-formu-head{
+    font-size: 7.5rem;
+    margin-top: -0.8em;
+    color: black;
+    font-weight: 500;
+    text-shadow: 4px 3px 8px black;
+}
+.hero-text-para{
+    color: #0A67B8;
+    font-size: 1.7rem;
+    width: 50rem;
+    text-shadow: 2px 3px 10px black;
+    font-weight: 700;
+    margin-top: -4.5em;
+}
+/* Add these styles to hero.css */
+
+/* Initial styles for the text */
+/* Initial styles for the text */
+.overlay-text-hero {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  z-index: 10;
+  /* color: white; */
+  /* z-index: 10; */
+  /* opacity: 0; */
+  /* transition: opacity 1.5s ease-in-out; */
+}
+
+.hero-welcome-text,
+.hero-aislin-head,
+.hero-formu-head,
+.hero-text-para {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Staggered transition effect */
+.hero-welcome-text {
+  transition-delay: 2s;
+}
+
+.hero-aislin-head {
+  transition-delay: 2.2s;
+}
+
+.hero-formu-head {
+  transition-delay: 2.4s;
+}
+
+.hero-text-para {
+  transition-delay: 2.6s;
+}
+
+/* Animation for fading text in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Resetting text opacity for fresh animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+/* Make Text Responsive */
+@media (max-width: 1024px) {
+    .hero-welcome-text {
+      font-size: 2.5rem;
+    }
+    .hero-aislin-head {
+      font-size: 2rem;
+    }
+    .hero-formu-head {
+      font-size: 1.5rem;
+    }
+    .hero-text-para {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-welcome-text {
+      font-size: 1.2rem;
+    }
+    .hero-aislin-head {
+      font-size: 3rem;
+    }
+    .hero-formu-head {
+      font-size: 3rem;
+    }
+    .hero-text-para {
+      font-size: 1rem;
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-welcome-text {
+      font-size: 1rem;
+    }
+    .hero-aislin-head {
+      font-size: 1.3rem;
+    }
+    .hero-formu-head {
+      font-size: 1.1rem;
+    }
+    .hero-text-para {
+      font-size: 0.8rem;
+    }
+  }

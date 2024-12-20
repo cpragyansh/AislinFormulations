@@ -1,0 +1,157 @@
+.footer-main-container {
+    background-color: #495057;
+    /* padding: 2em 1em; */
+     /* Add padding for smaller screens */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around;
+    align-items: center; /* Align items at the top */
+    /* gap: 10em;  */
+    /* Reduce gap for smaller screens */
+}
+
+.aislin-footer-social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap; /* Wrap icons on smaller screens */
+}
+
+.footer-col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5em;
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit width on larger screens */
+    text-align: center;
+}
+
+.footer-aislin-logo {
+    max-width: 150px; /* Make logo size responsive */
+    width: 100%;
+    height: auto;
+}
+
+.aislin-row-1-text {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    width: 100%; /* Allow text to take full width */
+    max-width: 400px; /* Limit width on larger screens */
+    text-align: justify;
+    margin: 0 auto; /* Center text */
+}
+
+.footer-col-2,
+.footer-col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: white;
+    gap: 0.5em;
+    /* flex: 1 1 45%; */
+     /* Share space equally on larger screens */
+    /* text-align: center; */
+}
+
+.footer-col-2-head,
+.footer-col-3-head {
+    /* margin-bottom: 1em; */
+    font-size: 24px;
+}
+
+.footer-col-2-list,
+.footer-col-3-para {
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+     /* Prevent text overflow */
+}
+
+.footer-text-section {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center;
+    gap: 4em;
+}
+.footer-col-2-list-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: -2em;
+}
+.footer-col-3-list-items{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+width: 22vw;
+margin-top: -1.5em;
+/* margin-bottom: 1em; */
+
+}
+.footer-col-3-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    margin-bottom:-1em;
+
+}
+.footer-email-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+.footer-call-text{
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-col-2-list{
+    margin-bottom: 0.6em;
+}
+@media (max-width: 768px) {
+    .footer-main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text-section {
+        flex-direction: column;
+        gap: 1.5em; /* Reduce gap on smaller screens */
+    }
+
+    .footer-col-2,
+    .footer-col-3 {
+        flex: 1 1 100%; /* Full width for small devices */
+        text-align: center;
+    }
+
+    .aislin-row-1-text {
+        font-size: 16px; /* Adjust font size */
+        max-width: 90%; /* Adjust width */
+    }
+
+    .footer-aislin-logo {
+        max-width: 120px; /* Smaller logo on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .aislin-row-1-text {
+        font-size: 14px; /* Further adjust font size */
+    }
+
+    .footer-col-2-list,
+    .footer-col-3-para {
+        font-size: 14px; /* Smaller font for better readability */
+    }
+}
