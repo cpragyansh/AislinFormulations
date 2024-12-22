@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./contact/Contact";
 import About from "./about/About";
 import Manufacturing from "./Manufacturing/Manufacturing";
+import Policy from "./Policy/Policy";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />  
       <Route path="/contact" element={<Contact />} />  
       <Route path="/aboutUs" element={<About />} />  
+      <Route path="/OurPolicy" element={<Policy />} />  
       <Route path="/Manufacturing" element={<Manufacturing />} />  
        
         {/* Add other routes here */}

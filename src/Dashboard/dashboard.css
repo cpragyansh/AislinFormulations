@@ -175,7 +175,7 @@
 
 .section-2-text-area-heading {
   color: white;
-  font-size: 5vw;
+  font-size: 1.6vw;
   margin-bottom: 0.8rem;
 }
 
@@ -345,7 +345,7 @@
   }
 
   .section-2-text-area-heading {
-    font-size: 2.5vw;
+    font-size: 1.6vw;
   }
 
   .section-2-text-area-paragraph {
@@ -378,7 +378,7 @@
   
   .section-2-party-manu-heading {
     font-size: 2vw;
-  }
+  }x
 
   .section-2-text-area-heading {
     font-size: 1.6vw;
@@ -1002,4 +1002,287 @@ padding-bottom: 2em;
   /* end */
 
 
+
+
+
+
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-225px * 5)); }
+}
+.partners-section{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.slider {
+    background: transparent;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: auto;
+    /* border: 20px double red; */
+    margin: auto;
+    overflow: hidden;
+    /* position: relative; */
+    /* width: 689vw; */
+width: 80vw;
+border-radius: 20px; 
+width: 100%;
+position: relative;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+}
+
+/* .slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 800px;
+    z-index: 2;
+} */
+
+/* .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+} */
+/* 
+.slider::before {
+    left: 0;
+    top: 0;
+} */
+
+.slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    /* width: calc(250px * 10); */
+    width: 60em;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+
+    /* margin: auto; */
+    gap: 2em;
+}
+
+.slide {
+    height: 50vh;
+    /* width: 40vw; */
+    object-fit: contain;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    width: 20em; /* Set the width for each image */
+    height: 20em; /* Set the height for each image */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2em;
+}
+.slider-images{
+    /* height: 50vh; */
+    /* width: 20vw; */
+    width: 100%;
+    height: 100%;
+    /* object-fit: fill; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    /* padding: 2vh; */
+}
+
+
+
+/* end */
+
+
+.partners-section {
+    position: relative; /* This sets up a positioning context for the child elements */
+    width: 100%; /* Adjust to your desired width */
+    /* height: 50vw; */
+     /* Adjust to your desired height */
+    overflow: hidden; /* Hide anything that overflows */
+/* background-image: url("../../../../public/assets/partners-section-bg.jpg"); */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+
+.partners-section-bg {
+    width: 100%; /* Make the image cover the full width of the section */
+    height: 50vw; /* Make the image cover the full height of the section */
+    object-fit: cover; /* Ensure the image covers the section without distortion */
+    position: absolute; /* Position the image absolutely within the parent */
+    top: 0; /* Align the top edge of the image with the top of the parent */
+    left: 0; /* Align the left edge of the image with the left of the parent */
+    z-index: 1; /* Place the image behind the text */
+}
+
+.partners-section-text {
+    /* position: absolute; */
+     /* Position the text absolutely within the parent */
+    /* top: 50%;  */
+    /* Center the text vertically */
+    /* left: 50%;  */
+    /* Center the text horizontally */
+    /* transform: translate(-50%, -50%);  */
+    /* Adjust the position of the text to be truly centered */
+    color:black; /* Adjust text color to stand out against the background */
+    /* z-index: 2;  */
+    /* Place the text above the image */
+    text-align: center; /* Center-align the text */
+    /* padding: 20px; */
+     /* Add some padding for better readability */
+     /* padding-right: 20px; */
+    display: flex;
+    /* justify-content: space-around; */
+    /* gap: 1vw; */
+    align-items: center;
+    gap: 10em;
+    width: 100%;
+}
+
+.partners-section-heading {
+    font-size: 3vw; /* Adjust the heading font size */
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+    /* margin-bottom: 1em; */
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 2vh;
+    /* text-shadow:4px 2.5px 0px rgba(170, 8, 8, 0.6),5px 3.5px 1px rgb(217, 230, 203); */
+    
+}
+.hr-below-section-4-heading{
+    color: black;
+    width: 47.5vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 2.5px;
+    background-color: black;
+    /* margin:auto; */
+    /* margin-top: 1vh; */
+    margin-bottom: 4em;
+    
+}
+
+
+.partners-section-para {
+    font-size: 1.2vw; /* Adjust the paragraph font size */
+    width: 45vw;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+.partners-section-hands-img{
+    height:60vh;
+        width: 30vw;
+        /* background-size: cover; */
+        object-fit: fill;
+    /* width: 60%; */
+    /* object-fit: fill; */
+    /* object-fit: scale-down; */
+    /* object-position: center; */
+    /* width: 30vw; */
+    /* margin-right: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding-left: 4em;
+    /* margin: auto; */
+    /* padding-bottom: 10%; */
+    /* border: 2px solid black; */
+/* margin-top: -10em; */
+}
+.partners-images-text-div{
+    /* width: 80vw; */
+    text-align: start;
+
+}
+
+
+@media  (max-width:768px) {
+    .partners-section-text{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .hr-below-section-4-heading{
+        color: yellow;
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 2.5px;
+        background-color: yellow;
+        /* margin:auto; */
+        /* margin-top: 1vh; */
+        margin-bottom: 1em;
+        
+    }
+    .partners-section-hands-img{
+        height:50vh;
+            width: 100%;
+            background-size: cover;
+            object-fit: cover;
+            /* background-position: center; */
+            /* padding: 2em; */
+        /* width: 60%; */
+        /* object-fit: fill; */
+        /* object-fit: scale-down; */
+        /* object-position: center; */
+        /* width: 30vw; */
+        /* margin-right: 0px; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center;/ */
+        /* margin: auto; */
+        /* padding-bottom: 10%; */
+        /* border: 2px solid black; */
+    /* margin-top: -10em; */
+    }
+    .partners-section-heading {
+        font-size: 5.5vw; /* Adjust the heading font size */
+        font-weight: 700;
+        /* margin: 0;  */
+        /* Remove default margin */
+        /* margin-bottom: 1em; */
+        display: flex;
+        gap: 2vw;
+        /* margin-bottom: 2vh; */
+        justify-content: center;
+        align-items: center;
+        text-shadow:4px 2.5px 0px rgba(170, 8, 8, 0.6),5px 3.5px 1px rgb(217, 230, 203);
+        
+    }
+    .partners-section-heading-svg{
+        /* height: 12vh; */
+        width: 10vw;
+    }
+    
+.partners-section-para {
+    font-size: 3vw; /* Adjust the paragraph font size */
+    width: 80vw;
+    font-weight: 700;
+    /* text-align: center; */
+    text-align: justify;
+    /* margin-bottom: 1em; */
+}
+.partners-images-text-div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2em;
+}
+}
 

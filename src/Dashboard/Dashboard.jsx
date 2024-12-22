@@ -241,35 +241,55 @@ export default function Dashboard() {
 
 
       {/* Section 4 */}
-      <div className="section-4-main-container" data-aos="fade-up">
-        <div className="section-4-center">
-          {/* <div className="section-4-text-area" data-aos="fade-up">
-            <h1 className="section-4-head">Third Party Manufacturing</h1>
-            <p className="section-4-para">Aislin offers contract manufacturing to clients for wide range of products that include nutraceuticals tablets, capsule, sachet and also Herbal formulation. We are providing the best quality products since 2010 to ensure good health of the people. The main aim of our company is to provide standardized, researched, and best quality products to our clients. If you associate with Aislin Formulation for the Pharma third party facility then we guarantee you sun. So, get in contact with us for the most competitive MOQ (Minimum Order Quantity) in the Pharma Industry. Get our quality-approved range of Pharma medicines and products along with contract manufacturing services.
-            </p>
-          </div> */}
-          <div className="section-4-slider-container" data-aos="zoom-in">
-            <button className="arrow left" onClick={scrollLeft}>←</button>
-            <div className="slider" ref={sliderRef} data-aos="zoom-out">
-              {[
-                { heading: "Environment Friendly", description: "Driving innovation to meet modern healthcare challenges." },
-                { heading: " Zero Debt Company ", description: "Pioneering research to deliver cutting-edge formulations." },
-                { heading: "Sustainable Practices", description: "A commitment to eco-friendly and sustainable manufacturing" },
-                { heading: "Quality Assurance", description: "Ensuring the highest standards in every product we deliver." },
-                { heading: "Customized Services", description: "Tailored solutions to meet unique client requirements." },
-                { heading: "Global Standards", description: "Adhering to international benchmarks for excellence." }
-              ].map((item, i) => (
-                <div className="vertical-boxes" key={i} data-aos="zoom-out">
-                  <h1 className="vb-head">{item.heading}</h1>
-                  <p className="vb-para">{item.description}</p>
+     <div className="partners-section">
+                {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
+                <div className="partners-section-text">
+                    <div className="partners-section-bg-image-div-box">
+                        <img src="assets/sliderf-bg.png" alt="" className="partners-section-hands-img" />
+                    </div>
+                    <div className="partners-images-text-div">
+                        <div className="partners-section-text-box">
+                            <h1 className="partners-section-heading"><img src="assets/partner.svg" alt="" className='partners-section-heading-svg' /> Associations & Partners</h1>
+                            <hr className="hr-below-section-4-heading" />
+                            <p className="partners-section-para">CGC VentureNest collaborates with a diverse network of industry partners, academic institutions, government agencies, and ecosystem enablers to provide startups with access to resources, opportunities, and expertise. Our strategic partnerships strengthen our ecosystem and create avenues for growth and collaboration.</p>
+                        </div>
+                        <div className="slider">
+                            <div className="slide-track">
+                                <div className="slide">
+                                    <img src="assets/medicine/m1.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m2.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m3.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m4.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m1.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m2.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m3.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m4.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m1.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/medicine/m2.jpg" className='slider-images' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              ))}
             </div>
-            <button className="arrow right" onClick={scrollRight} data-aos="zoom-out">→</button>
-          </div>
-
-        </div>
-      </div>
 
       {/* Section 5 */}
       <div className="section-5-number-main-container" ref={sectionRef} data-aos="fade-in">

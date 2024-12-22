@@ -48,32 +48,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18em; /* Reduced gap for smaller screens */
-    flex-wrap: wrap; /* Enables wrapping of children on smaller screens */
+    /* gap: 12em; */
+     /* Reduced gap for smaller screens */
+    /* flex-wrap: wrap;  */
+    /* Enables wrapping of children on smaller screens */
     margin-top: 2em;
     padding-bottom: 6em;
+    flex-flow: row-reverse;
   }
+  .about-page-main-section-1-image{
+    height: auto;
+    width: 36vw;
+  }
+  .section-2-collage-images {
+    position: relative;
+    width: 100%;
+    max-width: 40vw; /* Adjust container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .about-us-first-image {
     width: 90%; /* Adjust size relative to container for responsiveness */
-    max-width: 26vw; /* Retain maximum size for larger screens */
+    max-width: 20vw; /* Retain maximum size for larger screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 40px;
-    box-shadow: 4px 3px 14px 8px rgb(60, 57, 57);
+    /* box-shadow: 4px 3px 14px 8px rgb(60, 57, 57); */
+    z-index: 22;
+  position: relative;
+  border: 4px solid ;
   }
   
   .about-us-second-image {
     position: absolute;
-      box-shadow: 4px 3px 14px 8px rgb(60, 57, 57);
-    bottom: -5vh; /* Adjust for smaller screens */
-    right: -8em; /* Adjust for smaller screens */
+      /* box-shadow: 4px 3px 14px 8px rgb(60, 57, 57); */
+    bottom: -30%; /* Adjust for smaller screens */
+    right: -10%; /* Adjust for smaller screens */
     width: 85%; /* Adjust size relative to container */
-    max-width: 34vw;
+    max-width: 26vw;
+    /* z-index: -1; */
+
+    
     height: auto; /* Maintain aspect ratio */
     border-radius: 20px;
+    z-index: 1;
   }
   .about-us-text-section {
     width: 100%;
-    max-width: 30vw; /* Maintain max width for larger screens */
+    max-width: 50vw; /* Maintain max width for larger screens */
     height: auto;
     text-align: center; /* Center-align text for smaller screens */
   }
@@ -89,8 +111,8 @@
   
   .about-us-paragraph {
     font-size: 1.6em; /* Adjust size for readability */
-    font-weight: 400;
-    width: 30vw;
+    font-weight: 100;
+    width: 45vw;
     text-align: start;
     color: black;
   }
@@ -111,14 +133,20 @@
     text-align: center;
     font-size: 3em;
 
-    text-shadow: 4px 3px 8px rgb(35, 33, 33);
+    /* text-shadow: 4px 3px 8px rgb(35, 33, 33); */
     margin-bottom: 2em;
   }.about-us-paara-heading{
-    font-size: 3.4em;
-    text-shadow: 4px 3px 8px rgb(35, 33, 33);
+    font-size: 2.4em;
+    /* text-shadow: 4px 3px 8px rgb(35, 33, 33); */
     text-align: start;
+    width: 44vw;
   }
-
+.about-us-heading-green-color{
+  color: #128615;
+  width: 35vw;
+  font-size: 2.2em;
+  text-align: start;
+}
   .mission-box-1{
     display: flex;
     justify-content: center;
@@ -128,10 +156,11 @@
     background-color: #FAF9F6;
     box-shadow: 1px 1px 12px 1px black;
     width: 18vw;
-    height: 45vh;
+    height: 48vh;
+    padding: 1em;
   }
   .mission-box-para{
-    width: 80%;
+    width: 100%;
     text-align: center;
     font-size: 18px;
     color: rgb(65, 65, 65);

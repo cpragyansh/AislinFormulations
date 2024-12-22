@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Menuhero from "../components/Menuhero/Menuhero";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import './manufacturing.css'
 
 export default function Manufacturing() {
   const sliderRef = useRef(null);

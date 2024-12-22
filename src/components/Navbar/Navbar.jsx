@@ -36,7 +36,7 @@ const Navbar = () => {
     <div className="navbar-main-container">
 
 
-      <div className="navbar-days-time-block-main">
+      {/* <div className="navbar-days-time-block-main">
 
         <div className="navbar-days-flex-section">
 
@@ -62,7 +62,7 @@ const Navbar = () => {
 
 
 
-      </div>
+      </div> */}
 
 
       <div className="navbar-certifications-of-company">
@@ -140,12 +140,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={closeMenu}>
+              <Link to="/aboutUs" onClick={closeMenu}>
                 ABOUT
               </Link>
             </li>
             <li className="dropdown">
-              <Link to="#" onClick={(e) => e.preventDefault()}>
+              <Link to="/products" onClick={(e) => e.preventDefault()}>
                 Products
               </Link>
               <ul className="dropdown-menu">
@@ -172,7 +172,7 @@ const Navbar = () => {
                              </Link>
             </li>
             <li>
-              <Link to="/manufacturing" onClick={closeMenu}>
+              <Link to="/contact" onClick={closeMenu}>
                 CONTACT US
                              </Link>
             </li>
