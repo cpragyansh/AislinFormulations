@@ -150,6 +150,64 @@ export default function About() {
           ))}
         </div>
       </div>
+      <div className="partners-section">
+                {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
+                <div className="partners-section-text">
+                    <div className="partners-section-bg-image-div-box">
+                        <img src="assets/sliderf-bg.png" alt="" className="partners-section-hands-img" />
+                    </div>
+                    <div className="partners-images-text-div">
+                        <div className="partners-section-text-box">
+                            <h1 className="partners-section-heading"><img src="assets/partner.svg" alt="" className='partners-section-heading-svg' /> Our Products</h1>
+                            <hr className="hr-below-section-4-heading" />
+                            <p className="partners-section-para">Aislin Formulations is a leading manufacturer of Ayurvedic and nutritional products, committed to delivering high-quality solutions for both human and veterinary needs. Established in 2009, the company offers a diverse range of products, including Ayurvedic juices, syrups, creams, ointments, and nutritional dietary supplements. Each product is carefully formulated using natural ingredients, ensuring safety, efficacy, and adherence to international quality standards. Aislin Formulations is dedicated to enhancing health and well-being through innovative, research-backed products that support overall wellness and promote optimal health. The company’s commitment to quality and customer satisfaction is at the core of its operations.</p>
+                        </div>
+                        <div className="slider">
+                            <div className="slide-track">
+                                <div className="slide">
+                                    <img src="assets/p1.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p2.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p3.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p4.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p5.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p6.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p7.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p8.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p9.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p10.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p11.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p12.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p13.jpg" className='slider-images' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -65,7 +65,7 @@ export default function HeroSection() {
         <h1 className="hero-welcome-text">{images[currentImageIndex].heading1}</h1>
         <h2 className="hero-aislin-head">{images[currentImageIndex].heading2}</h2>
         <h3 className="hero-formu-head">{images[currentImageIndex].subheading}</h3>
-        <p className="hero-text-para">{images[currentImageIndex].description}</p>
+        {/* <p className="hero-text-para">{images[currentImageIndex].description}</p> */}
         <button className="hero-section-know-more-btn">KNOW MORE</button>
       </div>
 

@@ -146,24 +146,34 @@ const Navbar = () => {
             </li>
             <li className="dropdown">
               <Link to="/products" onClick={(e) => e.preventDefault()}>
-                Products
+                PRODUCTS
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/patents" onClick={closeMenu}>
-                    RANGE 1
+                  <Link to="/capsules" onClick={closeMenu}>
+                    Nutraceutical Capsules
                   </Link>
                 </li>
                 <li>
-                  <Link to="/success-stories" onClick={closeMenu}>
-                    RANGE 2
+                  <Link to="/sachets" onClick={closeMenu}>
+                  Nutraceutical Sachet
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/tablets" onClick={closeMenu}>
+                  Nutraceutical Tablets
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/syrups" onClick={closeMenu}>
+                  Nutraceutical Syrups
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/our-policy" onClick={closeMenu}>
-                Our Policy
+              <Link to="/ourpolicy" onClick={closeMenu}>
+                OUR POLICY
               </Link>
             </li>
             <li>

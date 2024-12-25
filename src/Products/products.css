@@ -1,0 +1,149 @@
+/* General table styles */
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 2vw;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .styled-table th {
+    background: linear-gradient(45deg, #4CAF50, #81C784);
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1em;
+    transition: background 0.3s ease;
+  }
+  
+  .styled-table tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .styled-table td {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-table td:hover {
+    background-color: #e8f5e9;
+    transform: translateX(5px);
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for cells */
+  .styled-table td:hover {
+    background-color: #e8f5e9;
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .styled-table {
+      font-size: 12px;
+    }
+    .styled-table th, .styled-table td {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .styled-table {
+      font-size: 10px;
+    }
+    .styled-table th, .styled-table td {
+      padding: 8px;
+    }
+    .table-container {
+      padding: 5px;
+    }
+  }
+  
+  /* Animation for table appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Adding glow effect for hover on table header */
+  .styled-table th:hover {
+    background: linear-gradient(45deg, #66bb6a, #388e3c);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Adding shadow effect on hover for table rows */
+  .styled-table tr:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Dialog Box Styles */
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialog-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dialog-box h3 {
+    margin-top: 0;
+  }
+  
+  .dialog-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .dialog-box button:hover {
+    background-color: #0056b3;
+  }
+  
