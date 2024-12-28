@@ -36,7 +36,7 @@ const Navbar = () => {
     <div className="navbar-main-container">
 
 
-      {/* <div className="navbar-days-time-block-main">
+      <div className="navbar-days-time-block-main">
 
         <div className="navbar-days-flex-section">
 
@@ -62,7 +62,7 @@ const Navbar = () => {
 
 
 
-      </div> */}
+      </div>
 
 
       <div className="navbar-certifications-of-company">

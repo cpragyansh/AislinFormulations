@@ -21,7 +21,7 @@
 
 .section-1-left-side-image-direct {
   width: 80%; /* Default width for the image */
-  max-width: 600px; /* Maximum size for larger screens */
+  max-width: 850px; /* Maximum size for larger screens */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -42,7 +42,7 @@
 .text-area-right-side-paragraph {
   color: black;
   font-size: 3.5vw; /* Adjust font size for smaller screens */
-  word-spacing: 0.5rem;
+  word-spacing: 0.1rem;
   font-weight: 200;
   width: 90%;
   /* margin: 0 auto; */
@@ -232,18 +232,19 @@
   }
 
   .text-area-right-side-heading {
-    font-size: 2vw; /* Smaller font size for larger screens */
+    font-size: 2.2vw; /* Smaller font size for larger screens */
   }
 
   .text-area-right-side-paragraph,
   .section-1-right-side-text-area-list,
   .section-1-text-area-right-side-below-para {
-    font-size: 1.4vw; /* Adjust font size */
+    font-size: 1.3vw; /* Adjust font size */
+    font-weight: 100;
   }
 
   .section-1-right-side-text-area-get-in-touch-btn {
     font-size: 1rem;
-    width: 12vw;
+    width: 16vw;
     height: 6vh;
   }
 }
@@ -265,15 +266,16 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 2em;
+  /* padding: 2em; */
 }
 
 /* Left Side Text Area */
 .left-side-text-area-section-2container {
   width: 90%;
-  max-width: 40rem;
+  max-width: 50rem;
   text-align: start;
-  /* padding: 2em; */
+  padding: 2em;
+  padding-left: 5em;
 }
 
 .section-2-party-manu-heading {
@@ -361,8 +363,8 @@
   background: transparent;
 }
 .section-2-box-main-heading {
-  font-size: 5vw;
-  max-width: 50%;
+  font-size: 5.5vw;
+  max-width: 62%;
   border-left: 6px solid #4caf50;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
@@ -506,7 +508,7 @@
   }
 
   .section-2-box-main-heading {
-    font-size: 1.2vw;
+    font-size: 1.22vw;
   }
 
   .section-2-box-paragraph {
@@ -941,7 +943,8 @@ padding-bottom: 2em;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; /* Enables wrapping for smaller screens */
-  padding: 1em; /* Adds padding for smaller screens */
+  /* padding: 1em;  */
+  /* Adds padding for smaller screens */
   gap: 2em;
 }
 
@@ -950,6 +953,7 @@ padding-bottom: 2em;
   height: 80vh;
   max-width: 100%; /* Ensures the image scales properly */
   object-fit: cover; /* Maintains aspect ratio */
+  margin-top: 4em;
 }
 
 /* Right Text Container */
@@ -967,20 +971,23 @@ padding-bottom: 2em;
 /* Main Heading */
 .imported-section-3-right-side-main-heading {
   color: #4CAF50;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
+  /* margin-bottom: 1em; */
+
   text-align: center; /* Centers heading for smaller screens */
 }
 
 /* Paragraphs */
 .imported-section-3-right-side-main-paragraph-1,
 .imported-section-3-right-side-main-paragraph-2 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
   width: 100%; /* Full width for smaller screens */
   max-width: 45vw; /* Limits width for larger screens */
   line-height: 1.5;
   text-align: justify;
+  margin-top: -0.2em;
 }
 
 /* Two Blocks Container */
@@ -996,9 +1003,11 @@ padding-bottom: 2em;
 /* Individual Block */
 .imported-section-3-block {
   width: 100%; /* Full width for smaller screens */
-  max-width: 30vw; /* Limits width for larger screens */
+  max-width: 25vw; /* Limits width for larger screens */
   border-radius: 30px;
-  padding: 1em;
+  /* padding: 0.5em; */
+  padding-left: 1em;
+  padding-right: 1em;
   box-shadow: 0.2px 0.2px 8px 0.2px rgb(92, 90, 90);
   display: flex;
   justify-content: start;
@@ -1009,16 +1018,17 @@ padding-bottom: 2em;
 
 /* Block Heading */
 .imported-section-3-block-main-heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
 }
 
 /* Block Paragraph */
 .imported-section-3-block-main-para {
   width: 100%; /* Full width for smaller screens */
-  max-width: 70%; /* Limits width for larger screens */
-  font-size: 1rem;
+  max-width: 90%; /* Limits width for larger screens */
+  font-size: 1.3rem;
   margin-top: -0.1em;
+  padding-left: 1em;
 }
 
 /* Flex Head Image Container */
@@ -1257,8 +1267,9 @@ background-position: center;
     /* justify-content: space-around; */
     /* gap: 1vw; */
     align-items: center;
+    justify-content: center;
     /* justify-content: center; */
-    gap: 10em;
+    gap: 6em;
     width: 100%;
 }
 
@@ -1284,8 +1295,8 @@ background-position: center;
     margin-bottom: 1em;
 }
 .partners-section-hands-img{
-    height:60vh;
-        width: 30vw;
+    height:80vh;
+        width: 38vw;
         /* background-size: cover; */
         object-fit: fill;
     /* width: 60%; */
@@ -1298,7 +1309,7 @@ background-position: center;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    padding-left: 4em;
+    /* padding-left: 4em; */
     /* margin: auto; */
     /* padding-bottom: 10%; */
     /* border: 2px solid black; */
