@@ -54,19 +54,10 @@ export default function About() {
 
     return (
         <div>
-            <h1 className="about-us-textsection-head">About Us</h1>
+            {/* <h1 className="about-us-textsection-head">About Us</h1> */}
             <div className="about-us-main-container">
                 <div className="section-2-collage-images">
-                    {/* <img
-                        src="assets/section-2-1.jpeg"
-                        alt="First Image"
-                        className=" about-us-first-image"
-                    />
-                    <img
-                        src="assets/section-2-2.png"
-                        alt="Second Image"
-                        className="about-us-second-image"
-                    /> */}
+                 
 
 
                     <img src="assets/about-page-first-img.png" alt="" className="about-page-main-section-1-image" />

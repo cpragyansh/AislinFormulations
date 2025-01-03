@@ -53,11 +53,11 @@ export default function Menuhero() {
   return (
     <div className="hero-main-box">
       {/* Text overlay container */}
-      <div className={`overlay-text-hero ${animateText ? 'fade-in' : ''}`}>
-        <h1 className="hero-welcome-text">{images[currentImageIndex].heading1}</h1>
-        <h2 className="hero-aislin-head">{images[currentImageIndex].heading2}</h2>
-        <h3 className="hero-formu-head">{images[currentImageIndex].subheading}</h3>
-        <p className="hero-text-para">{images[currentImageIndex].description}</p>
+      <div className={`overlay-text-hero-menuhero ${animateText ? 'fade-in' : ''}`}>
+        <h1 className="hero-welcome-text-menuhero">{images[currentImageIndex].heading1}</h1>
+        <h2 className="hero-aislin-head-menuhero">{images[currentImageIndex].heading2}</h2>
+        <h3 className="hero-formu-head-menuhero">{images[currentImageIndex].subheading}</h3>
+        <p className="hero-text-para-menuhero">{images[currentImageIndex].description}</p>
       </div>
 
       {/* Container with a full-screen height */}

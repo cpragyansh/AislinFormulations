@@ -15,9 +15,9 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
+    
     window.addEventListener("scroll", handleScroll);
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -26,84 +26,80 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  
   const closeMenu = () => {
     setIsMenuOpen(false); // Automatically close the menu when a link is clicked
   };
-
+  
   return (
-
+    
     <div className="navbar-main-container">
 
 
-      <div className="navbar-days-time-block-main">
+<div className="navbar-days-time-block-main">
+  <div className="navbar-days-flex-section">
+    <div className="days-and-time-block">
+    <img src="assets/aisilin-footer-white.png" alt="" className="navbar-white-white-aislin-logo" />
 
-        <div className="navbar-days-flex-section">
-
-          <div className="days-and-time-block">
-            Monday-Saturday 10AM-7PM
-          </div>
-          <div className="navbar-days-time-contact-info-container">
-            <div className="navbar-phone-number-section">
-            <FontAwesomeIcon icon={faPhone} />
-              <a href="tel:+9179797979"><p>+91 797979799979</p></a>
-            </div>
-            <div className="navbar-mail-section">
-            <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:info@gmail.com">abcd1234@gmail.com</a>
-            </div>
-            <div className="search-container">
+      Monday-Saturday 10AM-7PM
+      <button
+            className={`hamburger ${isMenuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </button>
+    </div>
+    <div className="navbar-days-time-contact-info-container">
+      <div className="navbar-phone-number-section">
+        <FontAwesomeIcon icon={faPhone} />
+        <a href="tel:+9179797979">
+          <p>+91 797979799979</p>
+        </a>
+      </div>
+      <div className="navbar-mail-section">
+        <FontAwesomeIcon icon={faEnvelope} />
+        <a href="mailto:info@gmail.com">abcd1234@gmail.com</a>
+      </div>
+      <div className="search-container">
         <button className="search-button">
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </div>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
 
 
 
+<div className="navbar-certifications-of-company">
+  <div className="aislin-main-logo-first-navbar">
+    <img src="assets/Aisilin-logo.png" alt="Aislin Logo" className="aislin-main-navbar-logo" />
+  </div>
+
+  <div className="nav-bar-certifications-main-main-box">
+    <div className="navbar-certifications-1">
+      <div className="certificate-logo">
+        <img src="assets/approved.png" alt="GMP Approved Logo" className="gmp-certificate-approved-logo" />
       </div>
-
-
-      <div className="navbar-certifications-of-company">
-
-        <div className="aislin-main-logo-first-navbar">
-          <img src="assets/Aisilin-logo.png" alt="" className="aislin-main-navbar-logo" />
-        </div>
-
-        <div className="nav-bar-certifications-main-main-box">
-          <div className="navbar-certifications-1">
-            <div className="certificate-logo">
-              <img src="assets/approved.png" alt="" className="gmp-certificate-approved-logo" />
-            </div>
-
-            <div className="navbar-certificate-title-head">
-              <h1 className="naavbar-certification-1-name">
-
-                GMP Certified Company
-              </h1>
-              <p className="navbar-certifications-1-number">
-                783432983444
-              </p>
-            </div>
-
-          </div>
-          <div className="navbar-certifications-1">
-            <div className="certificate-logo">
-              <img src="assets/reward.png" alt="" className="gmp-certification-reward-logo" />
-            </div>
-            <div className="navbar-certificate-title-head">
-              <h1 className="naavbar-certification-1-name">
-                GMP Certified Company
-              </h1>
-              <p className="navbar-certifications-1-number">
-                88998326721
-              </p>
-            </div>
-
-          </div>
-        </div>
+      <div className="navbar-certificate-title-head">
+        <h1 className="naavbar-certification-1-name">GMP Certified Company</h1>
+        <p className="navbar-certifications-1-number">783432983444</p>
       </div>
+    </div>
+    <div className="navbar-certifications-1">
+      <div className="certificate-logo">
+        <img src="assets/reward.png" alt="GMP Reward Logo" className="gmp-certification-reward-logo" />
+      </div>
+      <div className="navbar-certificate-title-head">
+        <h1 className="naavbar-certification-1-name">GMP Certified Company</h1>
+        <p className="navbar-certifications-1-number">88998326721</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
       <div className="navbar-bottom-container">
@@ -116,14 +112,7 @@ const Navbar = () => {
             />
           </div> */}
 
-          <button
-            className={`hamburger ${isMenuOpen ? "open" : ""}`}
-            onClick={toggleMenu}
-          >
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-          </button>
+          
 
           {/* Additional section */}
 

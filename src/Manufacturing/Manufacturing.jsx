@@ -71,49 +71,37 @@ export default function Manufacturing() {
         <Menuhero />
       </div>
 
-      <div
-        className="section-4-main-container"
-        data-aos="fade-up"
-      >
-        <div className="section-4-center">
-          <div
-            className="section-4-text-area"
-            data-aos="fade-right"
-          >
-            <h1 className="section-4-head">Third Party Manufacturing</h1>
-            <p className="section-4-para">
-              Aislin offers contract manufacturing to clients for wide range of
-              products that include nutraceuticals tablets, capsule, sachet and
-              also Herbal formulation...
+      <div className="section-4-main-container" data-aos="fade-up">
+  <div className="section-4-center">
+    <div className="section-4-text-area" data-aos="fade-right">
+      <h1 className="section-4-head">Third Party Manufacturing</h1>
+      <p className="section-4-para">
+        Aislin offers contract manufacturing to clients for a wide range of
+        products that include nutraceuticals tablets, capsules, sachets, and
+        also herbal formulations...
+      </p>
+    </div>
+    <div className="section-4-slider-container" data-aos="fade-left">
+      <button className="arrow left" onClick={scrollLeft}>
+        ←
+      </button>
+      <div className="slider" ref={sliderRef}>
+        {[...Array(6)].map((_, i) => (
+          <div className="vertical-boxes" key={i} data-aos="zoom-in">
+            <h1 className="vb-head">Innovative Solutions</h1>
+            <p className="vb-para">
+              Driving innovation to meet modern healthcare challenges.
             </p>
           </div>
-          <div
-            className="section-4-slider-container"
-            data-aos="fade-left"
-          >
-            <button className="arrow left" onClick={scrollLeft}>
-              ←
-            </button>
-            <div className="slider" ref={sliderRef}>
-              {[...Array(6)].map((_, i) => (
-                <div
-                  className="vertical-boxes"
-                  key={i}
-                  data-aos="zoom-in"
-                >
-                  <h1 className="vb-head">Innovative Solutions</h1>
-                  <p className="vb-para">
-                    Driving innovation to meet modern healthcare challenges.
-                  </p>
-                </div>
-              ))}
-            </div>
-            <button className="arrow right" onClick={scrollRight}>
-              →
-            </button>
-          </div>
-        </div>
+        ))}
       </div>
+      <button className="arrow right" onClick={scrollRight}>
+        →
+      </button>
+    </div>
+  </div>
+</div>
+
 
       {/* Section 5 */}
       <div
