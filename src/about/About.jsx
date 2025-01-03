@@ -2,6 +2,8 @@ import React, { useEffect,useRef } from 'react';
 import './about.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Mainpage from '../components/Mainpage/mainpage';
+import aboutBackground from '../2.png';
 
 export default function About() {
      const sliderRef = useRef(null);
@@ -54,6 +56,11 @@ export default function About() {
 
     return (
         <div>
+          <Mainpage
+        title="ABOUT US"
+        backgroundImage={aboutBackground} // Pass the local image as a prop
+      />
+      
             {/* <h1 className="about-us-textsection-head">About Us</h1> */}
             <div className="about-us-main-container">
                 <div className="section-2-collage-images">
@@ -145,7 +152,7 @@ export default function About() {
                 {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
                 <div className="partners-section-text">
                     <div className="partners-section-bg-image-div-box">
-                        <img src="assets/sliderf-bg.png" alt="" className="partners-section-hands-img" />
+                        <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" />
                     </div>
                     <div className="partners-images-text-div">
                         <div className="partners-section-text-box">

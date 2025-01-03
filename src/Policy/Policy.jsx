@@ -1,9 +1,14 @@
 import React from 'react'
-
+import Mainpage from '../components/Mainpage/mainpage';
+import aboutBackground from '../2.png';
 export default function Policy() {
   return (
     <div>
-
+  <Mainpage
+        title="OUR POLICY"
+        backgroundImage={aboutBackground} // Pass the local image as a prop
+      />
+      
 
 <div className="about-us-main-container">
                 <div className="section-2-collage-images">

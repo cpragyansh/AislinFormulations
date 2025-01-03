@@ -1,9 +1,15 @@
 import React from 'react'
 import './contact.css'
+import Mainpage from '../components/Mainpage/mainpage';
+import aboutBackground from '../2.png';
 export default function Contact() {
   return (
     <div>
-
+  <Mainpage
+        title="CONTACT US"
+        backgroundImage={aboutBackground} // Pass the local image as a prop
+      />
+      
 <h1 className='contact-main-heading'>Have a Question? Get In Touch</h1>
 
 <div className="contact-us-main-container">

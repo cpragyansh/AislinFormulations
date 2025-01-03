@@ -76,10 +76,12 @@ export default function Manufacturing() {
     <div className="section-4-text-area" data-aos="fade-right">
       <h1 className="section-4-head">Third Party Manufacturing</h1>
       <p className="section-4-para">
-        Aislin offers contract manufacturing to clients for a wide range of
-        products that include nutraceuticals tablets, capsules, sachets, and
-        also herbal formulations...
+      
+Aislin offers comprehensive contract manufacturing services with expertise in nutraceuticals, including tablets, capsules, and sachets. The company also specializes in herbal formulations, leveraging natural ingredients to create products aligned with holistic wellness practices. With a strong focus on precision, quality, and adherence to industry standards, Aislin ensures that every product meets the highest benchmarks. Supported by state-of-the-art manufacturing infrastructure, Aislin provides flexible, scalable, and efficient solutions, empowering clients to bring their innovative products to market with confidence.
       </p>
+      <p className="section-4-para">
+      
+      Aislin collaborates closely with clients to deliver customized solutions, handling everything from formulation to packaging with precision and care. With a focus on innovation and sustainability, Aislin leverages advanced technology to produce high-quality products while minimizing environmental impact, ensuring clients succeed in the competitive health and wellness market.      </p>
     </div>
     <div className="section-4-slider-container" data-aos="fade-left">
       <button className="arrow left" onClick={scrollLeft}>
@@ -101,7 +103,64 @@ export default function Manufacturing() {
     </div>
   </div>
 </div>
-
+<div className="partners-section">
+                {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
+                <div className="partners-section-text">
+                    <div className="partners-section-bg-image-div-box">
+                        <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" />
+                    </div>
+                    <div className="partners-images-text-div">
+                        <div className="partners-section-text-box">
+                            <h1 className="partners-section-heading"><img src="assets/partner.svg" alt="" className='partners-section-heading-svg' /> Our Products</h1>
+                            <hr className="hr-below-section-4-heading" />
+                            <p className="partners-section-para">Aislin Formulations is a leading manufacturer of Ayurvedic and nutritional products, committed to delivering high-quality solutions for both human and veterinary needs. Established in 2009, the company offers a diverse range of products, including Ayurvedic juices, syrups, creams, ointments, and nutritional dietary supplements. Each product is carefully formulated using natural ingredients, ensuring safety, efficacy, and adherence to international quality standards. Aislin Formulations is dedicated to enhancing health and well-being through innovative, research-backed products that support overall wellness and promote optimal health. The company’s commitment to quality and customer satisfaction is at the core of its operations.</p>
+                        </div>
+                        <div className="slider">
+                            <div className="slide-track">
+                                <div className="slide">
+                                    <img src="assets/p1.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p2.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p3.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p4.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p5.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p6.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p7.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p8.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p9.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p10.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p11.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p12.jpg" className='slider-images' />
+                                </div>
+                                <div className="slide">
+                                    <img src="assets/p13.jpg" className='slider-images' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
       {/* Section 5 */}
       <div

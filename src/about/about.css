@@ -21,7 +21,7 @@
 .about-us-main-container {
   display: flex;
   flex-direction: column-reverse; /* Stacks text and image vertically on smaller screens */
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 2em;
   background-color: white;
@@ -29,8 +29,8 @@
 }
 
 .about-page-main-section-1-image {
-  width: 90%; /* Adjusts for smaller screens */
-  max-width: 36vw; /* Maintains size on larger screens */
+  width: 100%; /* Adjusts for smaller screens */
+  max-width: 56vw; /* Maintains size on larger screens */
   height: auto;
   transition: transform 0.5s ease;
 }
@@ -49,10 +49,10 @@
 } */
 
 .about-us-text-section {
-  text-align: center;
+  text-align: start;
   /* padding: 1em; */
   max-width: 80vw;
-  width: 100%;
+  width: 50%;
 }
 
 .about-us-heading-green-color {
@@ -199,6 +199,7 @@
 .about-us-paara-heading{
   font-size: 2.2vh;
   width: 100%;
+  text-align: start;
 }
 
 

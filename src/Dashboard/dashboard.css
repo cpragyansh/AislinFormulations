@@ -671,6 +671,7 @@ height: 26vh;
     align-items: center;
     padding: 2em;
     overflow: hidden;
+    
   }
   
   .section-4-center {
@@ -685,7 +686,7 @@ height: 26vh;
   .section-4-head {
     font-size: 4rem;
     font-weight: 700;
-    color: WHite;
+    color: white;
     margin-bottom: 0.5em;
     text-align: center;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -699,13 +700,13 @@ height: 26vh;
   .section-4-para {
     color: white;
     text-align: justify;
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.4rem;
+    max-width:36vw;
   }
   
   .section-4-slider-container {
     position: relative;
-    width: 90%;
+    width: 40%;
     display: flex;
     align-items: center;
   }
