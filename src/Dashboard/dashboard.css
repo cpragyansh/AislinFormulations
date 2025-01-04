@@ -1371,11 +1371,13 @@ background-position: center;
     }
     .partners-section-hands-img{
         height:30vh;
-            width: 100%;
+            width: 80%;
             background-size: cover;
             object-fit: cover;
             /* background-position: center; */
             /* padding: 2em; */
+            margin-left: 0em;
+            margin: auto;
         /* width: 60%; */
         /* object-fit: fill; */
         /* object-fit: scale-down; */

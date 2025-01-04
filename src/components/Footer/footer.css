@@ -178,9 +178,9 @@ margin-top: -1.5em;
 
 @media (max-width: 480px) {
 
-    /* .footer-main-container{
-        width: 9%;
-    } */
+    .footer-main-container{
+        width: 95%;
+    }
 
     .aislin-row-1-text {
         font-size: 14px; /* Further adjust font size */
