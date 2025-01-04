@@ -10,17 +10,27 @@ export default function Footer () {
 <div className="footer-col-1">
     <img src="assets/aisilin-footer-white.png" alt="" className="footer-aislin-logo" />
 
-    <p className="aislin-row-1-text">Full circle is a leading platform for your coin and cryptocurrencies online.</p>
+    <h1 className="aislin-row-1-text-head">"Empowering Wellness, Inspiring Innovation."</h1>
+    <p className="aislin-row-1-text">At Aislin Formulations, we are dedicated to crafting high-quality healthcare solutions that prioritize your well-being. From innovative nutraceuticals to herbal formulations, our commitment to excellence drives us to deliver products that enhance lives and foster healthier communities. Together, let’s build a future where wellness knows no bounds.</p>
 
     <div className="aislin-footer-social-media">
 
-<img src="assets/facebook-white.png" alt="" className="footer-social-icons" />
+{/* <img src="assets/facebook-white.png" alt="" className="footer-social-icons" />
 <img src="assets/twitter-white.png" alt="" className="footer-social-icons" />
-<img src="assets/linkedin-white.png" alt="" className="footer-social-icons" />
+<img src="assets/linkedin-white.png" alt="" className="footer-social-icons" /> */}
 
     </div>
 </div>
 <div className="footer-text-section">
+<div className="footer-col-2">
+    <h1 className="footer-col-2-head">Products</h1>
+    <div className="footer-col-2-list-section">
+     <p className="footer-col-2-list">Capsules</p>
+     <p className="footer-col-2-list">Syrups</p>
+     <p className="footer-col-2-list">Sachets</p>
+     <p className="footer-col-2-list">Ayurvedic</p>
+     </div>
+</div>
 <div className="footer-col-2">
     <h1 className="footer-col-2-head">Quick Links</h1>
     <div className="footer-col-2-list-section">
@@ -36,9 +46,10 @@ export default function Footer () {
 <div className="footer-col-3-list-items">
 <p className="footer-col-3-para"><p className="footer-call-text">Call:</p> <a href=" tel:+91 9696969696">+91 969696969696</a></p>
 <p className="footer-col-3-para"><a href="mailto: info@aislinformulation.com" className='footer-email-text'><p className="footer-call-text">Email:</p> info@aislinformulation.com</a></p>
-<p className="footer-col-3-para">Address: HSIDC Road Rai, Sector 14, Sonipat-131001, Haryana, India</p>
+<p className="footer-col-3-para"><p className="footer-address-main-head-heading">Address:</p>  HSIDC Road Rai, Sector 14, Sonipat-131001, Haryana, India</p>
 </div>
 </div>
+
 </div>
 </div>
 
