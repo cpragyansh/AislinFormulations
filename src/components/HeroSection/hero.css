@@ -124,8 +124,8 @@
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Make Text Responsive with min and max width */
-@media (min-width: 1440px) and (max-width: 1500px) {
+/* Make Text Responsive with min and max width
+@media (min-width: 1440px) and (max-width: 1400px) {
     .hero-welcome-text {
         font-size: 3rem;
     }
@@ -139,13 +139,13 @@
         font-size: 1.8rem;
         width: 55rem;
     }
-}
- @media  (min-width:1500px) {
+} */
+ @media  (min-width:1300px) {
 
     .overlay-text-hero {
         position: absolute;
-        top: 40%;
-        left: 40%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         text-align: start;
         display: flex;
