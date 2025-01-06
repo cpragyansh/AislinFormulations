@@ -744,4 +744,28 @@ font-size: clamp(1rem, 1vw, 1.5rem);
   height: clamp(30px, 3vw, 60px);
   transition: transform 0.3s ease;
 }
+.navbar-days-time-contact-info-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+  max-width: 60%;
+  text-align: center;
+  background-color: #5c5c5c;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  /* padding: 0.5em; */
+  /* border-radius: 8px; */
+  height: 100%;
+  transition: box-shadow 0.8s ease;
+}.navbar-phone-number-section,
+.navbar-mail-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: -0.5em;
+}
+
 }

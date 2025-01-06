@@ -1,5 +1,8 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import './hero.css';
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Correct import for WhatsApp icon
 import { faEnvelope, faSms, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -69,7 +72,7 @@ export default function HeroSection() {
         <h1 className="hero-welcome-text">{images[currentImageIndex].heading1}</h1>
         <h2 className="hero-aislin-head">{images[currentImageIndex].heading2}</h2>
         <h2 className="hero-text-para">{images[currentImageIndex].description}</h2>
-        <button className="hero-section-know-more-btn">KNOW MORE</button>
+        <Link to="/aboutUs"><button className="hero-section-know-more-btn">KNOW MORE</button></Link>
       </div>
       <div
         className="hero-main-2"

@@ -124,7 +124,7 @@
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Make Text Responsive with min and max width
+/* Make Text Responsive with min and max width */
 @media (min-width: 1440px) and (max-width: 1400px) {
     .hero-welcome-text {
         font-size: 3rem;
@@ -139,7 +139,7 @@
         font-size: 1.8rem;
         width: 55rem;
     }
-} */
+} 
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hero-welcome-text {
@@ -249,14 +249,14 @@
     z-index: 1000;
     background-color: #4CAF50;
     
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 28px 0 0 28px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .download-btn {
     color: white;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     /* text-overflow: ellipsis; */
     word-break: break-all;
     
@@ -268,9 +268,9 @@
     background-color: #4CAF50;
     border: none;
     cursor: pointer;
-    height: 20vh;
+    height: 34vh;
     width: 0.1vw;
-    /* padding: 10px 20px; */
+    padding: 30px 10px;
     border-radius: 20px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -337,12 +337,13 @@
     background-color: #FF9800;
 }
 
-@media  (min-width:1300px) {
+
+@media  (min-width:1100px) and (max-width:1480px) {
 
    .overlay-text-hero {
        position: absolute;
-       top: 50%;
-       left: 36%;
+       top: 36%;
+       left: 30%;
        transform: translate(-50%, -50%);
        text-align: start;
        display: flex;
@@ -352,7 +353,7 @@
        z-index: 10;
    }
    .hero-welcome-text {
-       font-size: 2.5rem;
+       font-size: 3.5vw;
    }
    .hero-aislin-head {
        font-size: 5rem;
@@ -367,7 +368,7 @@
    
    .download-btn {
        color: white;
-       font-size: 1rem;
+       font-size: 0.8rem;
        /* text-overflow: ellipsis; */
        word-break: break-all;
      
@@ -379,12 +380,58 @@
        background-color: #4CAF50;
        border: none;
        cursor: pointer;
-       height: 20vh;
+       height: 24vh;
        width: 0.1vw;
-       /* padding: 10px 20px; */
+       /* padding: 30px 20px; */
        border-radius: 20px;
        transition: background-color 0.3s ease-in-out;
      }
      
 
 }
+@media  (min-width:1400px) {
+    
+    .overlay-text-hero {
+     position: absolute;
+     top: 36%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+     text-align: start;
+     display: flex;
+     justify-content: start;
+     align-items: start;
+     flex-direction: column;
+     z-index: 10;
+ } .hero-welcome-text {
+     font-size: 3.5rem;
+ }
+ .hero-aislin-head {
+     font-size: 5rem;
+ }
+ .hero-formu-head {
+     font-size: 5rem;
+ }
+ .hero-text-para {
+     font-size: 1.1rem;
+     width: 50rem;
+ }
+ 
+ .download-btn {
+     color: white;
+     font-size: 1vh;
+     word-break: break-all;
+   
+     display: flex;
+     justify-content: center;
+   align-items: center;
+     font-weight: bold;
+     background-color: #4CAF50;
+     border: none;
+     cursor: pointer;
+     height: 28vh;
+     width: 0.1vw;
+     border-radius: 20px;
+     transition: background-color 0.3s ease-in-out;
+   }
+     
+ }

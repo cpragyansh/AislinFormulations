@@ -107,7 +107,7 @@ Aislin offers comprehensive contract manufacturing services with expertise in nu
                 {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
                 <div className="partners-section-text">
                     <div className="partners-section-bg-image-div-box">
-                        <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" />
+                        {/* <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" /> */}
                     </div>
                     <div className="partners-images-text-div">
                         <div className="partners-section-text-box">

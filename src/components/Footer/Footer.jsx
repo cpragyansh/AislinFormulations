@@ -2,6 +2,8 @@
 
 import React from 'react'
 import "./footer.css"
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
 export default function Footer () {
   return (
     <div>
@@ -25,19 +27,19 @@ export default function Footer () {
 <div className="footer-col-2">
     <h1 className="footer-col-2-head">Products</h1>
     <div className="footer-col-2-list-section">
-     <p className="footer-col-2-list">Capsules</p>
-     <p className="footer-col-2-list">Syrups</p>
-     <p className="footer-col-2-list">Sachets</p>
-     <p className="footer-col-2-list">Ayurvedic</p>
+     <Link to="capsules"><p className="footer-col-2-list">Capsules</p></Link>
+     <Link to="syrups"><p className="footer-col-2-list">Syrups</p></Link>
+     <Link to="sachets"><p className="footer-col-2-list">Sachets</p></Link>
+     <Link to=""><p className="footer-col-2-list">Ayurvedic</p></Link>
      </div>
 </div>
 <div className="footer-col-2">
     <h1 className="footer-col-2-head">Quick Links</h1>
     <div className="footer-col-2-list-section">
-     <p className="footer-col-2-list">Manufacturing</p>
-     <p className="footer-col-2-list">About Us</p>
-     <p className="footer-col-2-list">Contact Us</p>
-     <p className="footer-col-2-list">Our Policy</p>
+     <Link to="manufacturing"><p className="footer-col-2-list">Manufacturing</p></Link>
+     <Link to="aboutUs"><p className="footer-col-2-list">About Us</p></Link>
+     <Link to="contact"><p className="footer-col-2-list">Contact Us</p></Link>
+     <Link to="ourPolicy"><p className="footer-col-2-list">Our Policy</p></Link>
      </div>
 </div>
 

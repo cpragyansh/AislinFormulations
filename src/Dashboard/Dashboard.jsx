@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
+import { Link } from "react-router-dom"; 
+// Import Link from react-router-dom
 import "./dashboard.css";
 // import Menuhero from "../components/Menuhero/Menuhero";
 import AOS from 'aos';
@@ -81,7 +83,6 @@ export default function Dashboard() {
 
 
 
-
       <div className="section-1-main-container">
       <div className="left-side-image-section-section-1" data-aos="zoom-in-up">
         <img src="assets/2010.png" alt="" className="section-1-left-side-image-direct" />
@@ -104,9 +105,9 @@ export default function Dashboard() {
           Aislin Group, founded by Mr. Vishal in 2010, is a trusted producer of high-quality herbal products, using modern technology and international standards for unmatched quality and personalized solutions.
         </p>
 
-        <button className="section-1-right-side-text-area-get-in-touch-btn" data-aos="zoom-in" data-aos-delay="800">
+       <Link to="/contact"> <button className="section-1-right-side-text-area-get-in-touch-btn" data-aos="zoom-in" data-aos-delay="800">
           GET IN TOUCH
-        </button>
+        </button></Link>
       </div>
     </div>
 
@@ -128,7 +129,7 @@ export default function Dashboard() {
           <p className="section-2-text-area-paragraph" data-aos="fade-up" data-aos-delay="400">
             Aislin offers contract manufacturing to clients for a wide range of products that include nutraceuticals tablets, capsules, sachets, and also Herbal formulation. We have been providing the best quality products since 2010 to ensure good health. The main aim of our company is to provide standardized, researched, and best quality products to our clients. If you associate with Aislin Formulation for the Pharma third party facility, we guarantee you success. So, get in contact with us for the most competitive MOQ (Minimum Order Quantity) in the Pharma Industry. Get our quality-approved range of Pharma medicines and products along with contract manufacturing services.
           </p>
-          <button className="section-2-text-area-contactu-us-btn" data-aos="zoom-in" data-aos-delay="600">CONTACT US</button>
+          <Link to="/contact"><button className="section-2-text-area-contactu-us-btn" data-aos="zoom-in" data-aos-delay="600">CONTACT US</button></Link>
         </div>
 
         {/* Right Boxes Area */}
@@ -176,7 +177,7 @@ export default function Dashboard() {
 
       {/* Left Image Section */}
       <div className="imported-section-3-left-side-image-container" data-aos="fade-right">
-        <img src="assets/section-3-imported-image.png" alt="" className="imported-section-3-main-image-left" />
+        <img src="assets/test-image.jpg" alt="" className="imported-section-3-main-image-left" />
       </div>
 
       {/* Right Text Section */}

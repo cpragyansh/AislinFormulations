@@ -135,11 +135,23 @@
         font-size: 8rem;
     }
     .hero-formu-head-menuhero {
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .hero-text-para-menuhero {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 55rem;
+    }
+    .overlay-text-hero-menuhero {
+        position: absolute;
+        top: 40%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        text-align: start;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        z-index: 10;
     }
 }
 
@@ -262,7 +274,7 @@
 
 .download-btn {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   /* text-overflow: ellipsis; */
   word-break: break-all;
 
