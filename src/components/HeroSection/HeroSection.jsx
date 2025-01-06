@@ -12,7 +12,8 @@ export default function HeroSection() {
   };
   const images = [
     {
-      src: 'assets/edited.png',
+      // src: 'assets/edited.png',
+      src: 'assets/menu-1.jpg',
       alt: 'Background 1',
       heading1: 'Welcome to',
       heading2: 'Aislin Formulations',
@@ -20,7 +21,8 @@ export default function HeroSection() {
         'Aislin Formulations is one of the leading manufacturers of Herbals, Nutraceutical and Food & dietary supplements products...',
     },
     {
-      src: '/assets/edited-4.png',
+      // src: '/assets/edited-4.png',
+      src: 'assets/menu-2.jpg',
       alt: 'Background 3',
       heading1: 'Innovating Healthier',
       heading2: 'Healthier Living',
@@ -28,7 +30,8 @@ export default function HeroSection() {
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
     {
-      src: '/assets/edited-5.png',
+      // src: '/assets/edited-5.png',
+      src: 'assets/menu-3.jpg',
       alt: 'Background 3',
       heading1: 'Innovating for a',
       heading2: 'Healthier  Living',
