@@ -140,6 +140,36 @@
         width: 55rem;
     }
 }
+ @media  (min-width:1500px) {
+    .overlay-text-hero {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        text-align: start;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        z-index: 10;
+    }
+    .hero-welcome-text {
+        font-size: 2.2rem;
+    }
+    .hero-aislin-head {
+        font-size: 5rem;
+    }
+    .hero-formu-head {
+        font-size: 5rem;
+    }
+    .hero-text-para {
+        font-size: 1.1rem;
+        width: 50rem;
+    }
+    
+
+
+ }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hero-welcome-text {
