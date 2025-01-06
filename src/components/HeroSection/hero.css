@@ -125,7 +125,7 @@
 }
 
 /* Make Text Responsive with min and max width */
-@media (min-width: 1440px)  {
+@media (min-width: 1440px) and (max-width: 1500px) {
     .hero-welcome-text {
         font-size: 3rem;
     }
@@ -140,11 +140,12 @@
         width: 55rem;
     }
 }
- /* @media  (min-width:1400px) {
+ @media  (min-width:1500px) {
+
     .overlay-text-hero {
         position: absolute;
         top: 40%;
-        left: 60%;
+        left: 40%;
         transform: translate(-50%, -50%);
         text-align: start;
         display: flex;
@@ -169,7 +170,7 @@
     
 
 
- } */
+ }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hero-welcome-text {
