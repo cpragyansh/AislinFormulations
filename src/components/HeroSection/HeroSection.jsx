@@ -24,8 +24,8 @@ export default function HeroSection() {
       // src: '/assets/edited-4.png',
       src: 'assets/menu-2.jpg',
       alt: 'Background 3',
-      heading1: 'Innovating Healthier',
-      heading2: 'Healthier Living',
+      heading1: 'Contract',
+      heading2: 'Manufacturing',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
@@ -33,16 +33,16 @@ export default function HeroSection() {
       // src: '/assets/edited-5.png',
       src: 'assets/menu-3.jpg',
       alt: 'Background 3',
-      heading1: 'Innovating for a',
-      heading2: 'Healthier  Living',
+      heading1: 'Quility ',
+      heading2: 'Assurance',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
     {
       src: '/assets/edited-6.png',
       alt: 'Background 3',
-      heading1: 'Innovating for a',
-      heading2: 'Healthier Living',
+      heading1: 'Aislin',
+      heading2: 'Future of Formulation',
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },

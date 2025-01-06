@@ -720,3 +720,28 @@ a{
   }
 }
 
+@media (min-width:1200px ) {
+  .nav-links li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    transition: color 0.3s ease,letter-spacing 0.3s ease;
+    overflow: hidden;
+    text-align: start;
+  }
+  
+
+.naavbar-certification-1-name{
+font-size: clamp(1rem, 1vw, 1.5rem);
+
+
+}
+.certificate-logo img {
+  height: clamp(30px, 3vw, 60px);
+  transition: transform 0.3s ease;
+}
+}
