@@ -38,14 +38,14 @@ export default function HeroSection() {
       description:
         'Our mission is to improve health and wellness through innovation and sustainability...',
     },
-    {
-      src: '/assets/edited-6.png',
-      alt: 'Background 3',
-      heading1: 'Aislin',
-      heading2: 'Future of Formulation',
-      description:
-        'Our mission is to improve health and wellness through innovation and sustainability...',
-    },
+    // {
+    //   src: '/assets/edited-6.png',
+    //   alt: 'Background 3',
+    //   heading1: 'Aislin',
+    //   heading2: 'Future of Formulation',
+    //   description:
+    //     'Our mission is to improve health and wellness through innovation and sustainability...',
+    // },
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -68,6 +68,7 @@ export default function HeroSection() {
       <div className={`overlay-text-hero ${animateText ? 'fade-in' : ''}`}>
         <h1 className="hero-welcome-text">{images[currentImageIndex].heading1}</h1>
         <h2 className="hero-aislin-head">{images[currentImageIndex].heading2}</h2>
+        <h2 className="hero-text-para">{images[currentImageIndex].description}</h2>
         <button className="hero-section-know-more-btn">KNOW MORE</button>
       </div>
       <div

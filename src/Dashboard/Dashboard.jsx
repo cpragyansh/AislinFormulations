@@ -259,7 +259,7 @@ export default function Dashboard() {
 
       <div className="partners-section-text">
         <div className="partners-section-bg-image-div-box" data-aos="fade-right">
-          <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" />
+          {/* <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" /> */}
         </div>
 
         <div className="partners-images-text-div">

@@ -1154,7 +1154,7 @@ padding-bottom: 2em;
     /* width: 689vw; */
 width: 80vw;
 border-radius: 20px; 
-width: 100%;
+/* width: 100%; */
 position: relative;   
     display: flex;
     justify-content: center;
@@ -1274,7 +1274,7 @@ background-position: center;
     align-items: center;
     justify-content: center;
     /* justify-content: center; */
-    gap: 6em;
+    /* gap: 6em; */
     width: 100%;
 }
 
@@ -1284,6 +1284,7 @@ background-position: center;
     margin: 0; /* Remove default margin */
     /* margin-bottom: 1em; */
     display: flex;
+    justify-content: center;
     gap: 1vw;
     color: #4CAF50;
     margin-bottom: 2vh;
@@ -1295,7 +1296,7 @@ background-position: center;
 
 .partners-section-para {
     font-size: 1.2vw; /* Adjust the paragraph font size */
-    width: 45vw;
+    width: 90vw;
     text-align: justify;
     margin-bottom: 1em;
 }
