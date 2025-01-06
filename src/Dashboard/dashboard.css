@@ -1314,7 +1314,7 @@ background-position: center;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    margin-left: 4em;
+    margin-left: 6em;
     /* padding-left: 4em; */
     /* margin: auto; */
     /* padding-bottom: 10%; */
@@ -1326,6 +1326,7 @@ background-position: center;
     text-align: start;
 
 }
+
 
 
 @media  (max-width:768px) {
@@ -1465,5 +1466,27 @@ position: relative;
 .slide-track{
   gap: 0.5em;
 }
+}
+
+@media (min-width:1200px) {
+  .partners-section-hands-img {
+    height: 70vh;
+    width: 25vw;
+    /* background-size: cover; */
+    object-fit: fill;
+    /* width: 60%; */
+    /* object-fit: fill; */
+    /* object-fit: scale-down; */
+    /* object-position: center; */
+    /* width: 30vw; */
+    /* margin-right: 0px; */
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 12em;
+}
+  
 }
 
