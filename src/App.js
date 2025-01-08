@@ -16,8 +16,12 @@ import Sachets from "./Products/Sachets";
 import Powder from "./Products/Powder";
 import Quality from "./Policy/Quality";
 import Safety from "./Policy/Safety";
-import companyOverview from "./about/companyOverview";
 import Loader from './components/Loader/Loader'; // Import the loader component
+import Overview from "./about/Overview";
+import Whyaislin from "./about/Whyaislin";
+import Management from "./about/Management";
+import Mission_vision from "./about/Mission_vision";
+// import Values from "./about/Values";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Loading state
@@ -51,7 +55,11 @@ function App() {
           <Route path="/powder" element={<Powder />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/safety" element={<Safety />} />
-          <Route path="/companyOverview" element={<companyOverview />} />
+          <Route path="/overview" element={<Overview />} />
+          <Route path="/whyaislin" element={<Whyaislin />} />
+          <Route path="/Management" element={<Management />} />
+          <Route path="/Mission_vision" element={<Mission_vision/>} />
+
         </Routes>
       )}
       <Footer />

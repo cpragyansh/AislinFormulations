@@ -343,7 +343,7 @@
    .overlay-text-hero {
        position: absolute;
        top: 36%;
-       left: 30%;
+       left: 40%;
        transform: translate(-50%, -50%);
        text-align: start;
        display: flex;
@@ -368,7 +368,7 @@
    
    .download-btn {
        color: white;
-       font-size: 0.8rem;
+       font-size: 0.6rem;
        /* text-overflow: ellipsis; */
        word-break: break-all;
      
@@ -394,7 +394,7 @@
     .overlay-text-hero {
      position: absolute;
      top: 36%;
-     left: 30%;
+     left: 40%;
      transform: translate(-50%, -50%);
      text-align: start;
      display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-export default function companyOverview() {
+export default function Overview() {
   return (
     <div>
         <div className="about-us-main-container">

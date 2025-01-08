@@ -204,7 +204,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="about-us-main-container override-image-why-aislin">
+            {/* <div className="about-us-main-container override-image-why-aislin">
                 <div className="section-2-collage-images">
                  
 
@@ -223,8 +223,8 @@ export default function About() {
                     <p className="about-us-paragraph override-why-aislin-text">                        Aislin Formulations stands as a reliable partner in contract manufacturing, providing end-to-end solutions for pharmaceutical companies worldwide. From research and development to large-scale production, we handle every step with precision and care. Our streamlined processes and robust quality control systems ensure timely delivery of high-quality medicines, customized to your specifications. By choosing Aislin, you gain access to a partner who values transparency, efficiency, and a shared vision for advancing healthcare through superior formulations.               </p>
                     <button className="about-us-getintouchbtn">Get in touch -</button>
                 </div>
-            </div>
-            <div className="about-us-main-container">
+            </div> */}
+            {/* <div className="about-us-main-container">
                 <div className="section-2-collage-images">
                  
 
@@ -243,7 +243,7 @@ export default function About() {
                     <p className="about-us-paragraph">                    The management at Aislin Formulations is more than just a team; it’s a dynamic force that bridges innovation with execution. With a focus on operational efficiency, compliance, and customer satisfaction, our leaders ensure that every decision aligns with our core values. Their unwavering commitment to quality and progress not only inspires trust among our partners but also positions Aislin as a trusted name in formulations and contract manufacturing. Together, they guide us toward a future of growth, excellence, and impactful solutions.        </p>
                     <button className="about-us-getintouchbtn">Get in touch -</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

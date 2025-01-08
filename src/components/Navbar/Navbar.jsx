@@ -128,43 +128,43 @@ const Navbar = () => {
                 HOME
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/aboutUs" onClick={closeMenu}>
                 About
               </Link>
-            </li>
-            {/* <li className="dropdown">
+            </li> */}
+            <li className="dropdown">
               <Link to="/aboutUs" onClick={(e) => e.preventDefault()}>
-                About 
+                ABOUT
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/companyOverview" onClick={closeMenu}>
+                  <Link to="/aboutUs" onClick={closeMenu}>
                     Company Overview
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sachets" onClick={closeMenu}>
+                  <Link to="/Management" onClick={closeMenu}>
                   Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tablets" onClick={closeMenu}>
+                  <Link to="/Mission_vision" onClick={closeMenu}> 
                   Mission Vision Values
                   </Link>
                 </li>
                 <li>
-                  <Link to="/syrups" onClick={closeMenu}>
+                  <Link to="/whyaislin" onClick={closeMenu}>
                   Why Aislin
                   </Link>
                 </li>
                 <li>
-                  <Link to="/syrups" onClick={closeMenu}>
+                  <Link to="/contact" onClick={closeMenu}>
                   Contact Us
                   </Link>
                 </li>
               </ul>
-            </li> */}
+            </li>
             <li className="dropdown">
               <Link to="/products" onClick={(e) => e.preventDefault()}>
                 PRODUCTS

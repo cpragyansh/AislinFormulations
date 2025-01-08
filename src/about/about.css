@@ -250,3 +250,22 @@
 .override-company-overview-head{
   font-size: 20px;
 }
+
+
+.management-main-below-part-text-area{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+.management-text-area-parts-heading{
+  color: #128615;
+}
+.management-founder-name{
+  color: #0A67B8;
+  font-size: 24px;
+  font-weight: 600;
+}
