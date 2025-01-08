@@ -16,6 +16,7 @@ import Sachets from "./Products/Sachets";
 import Powder from "./Products/Powder";
 import Quality from "./Policy/Quality";
 import Safety from "./Policy/Safety";
+import companyOverview from "./about/companyOverview";
 import Loader from './components/Loader/Loader'; // Import the loader component
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Route path="/powder" element={<Powder />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/safety" element={<Safety />} />
+          <Route path="/companyOverview" element={<companyOverview />} />
         </Routes>
       )}
       <Footer />

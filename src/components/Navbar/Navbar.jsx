@@ -130,9 +130,41 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/aboutUs" onClick={closeMenu}>
-                ABOUT
+                About
               </Link>
             </li>
+            {/* <li className="dropdown">
+              <Link to="/aboutUs" onClick={(e) => e.preventDefault()}>
+                About 
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/companyOverview" onClick={closeMenu}>
+                    Company Overview
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/sachets" onClick={closeMenu}>
+                  Management
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/tablets" onClick={closeMenu}>
+                  Mission Vision Values
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/syrups" onClick={closeMenu}>
+                  Why Aislin
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/syrups" onClick={closeMenu}>
+                  Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </li> */}
             <li className="dropdown">
               <Link to="/products" onClick={(e) => e.preventDefault()}>
                 PRODUCTS
@@ -160,11 +192,11 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <Link to="/ourpolicy" onClick={closeMenu}>
                 OUR POLICY
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/manufacturing" onClick={closeMenu}>
                 CONTRACT MANUFACTURING

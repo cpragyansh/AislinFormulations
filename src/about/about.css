@@ -231,3 +231,22 @@
 }
 }
 
+
+
+.override-image-why-aislin{
+  flex-direction: row;
+
+  background-image: url("../2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.override-why-aislin-text{
+  color: white;
+  font-size: 17px;
+}
+.override-company-overview-head{
+  font-size: 20px;
+}

@@ -92,18 +92,17 @@ export default function Dashboard() {
           Complete solutions in one place...
         </h1>
         <p className="text-area-right-side-paragraph" data-aos="fade-up" data-aos-delay="200">
-          At Aislin Formulations, we are dedicated to excellence, crafting premium-quality herbal remedies, nutraceuticals, food supplements, and dietary solutions. Rooted in innovation and guided by nature, our products embody purity, health, and trust—delivering wellness in every formulation.
+        Aislin Formulation is one of the leading manufacturers of Herbals, Nutraceutical , Food & dietary supplements products.
         </p>
 
         <ul className="section-1-right-side-text-area-list" data-aos="fade-up" data-aos-delay="400">
-          <li className="section-1-text-area-right-side-list-items">Quality Control System, 100% Satisfaction Guarantee</li>
+          <li className="section-1-text-area-right-side-list-items">Quality Control System , 100% Satisfaction Guarantee</li>
           <li className="section-1-text-area-right-side-list-items">Unrivalled Workmanship, Professional and Qualified</li>
           <li className="section-1-text-area-right-side-list-items">Environmental Sensitivity, Personalised Solutions</li>
         </ul>
 
         <p className="section-1-text-area-right-side-below-para" data-aos="fade-up" data-aos-delay="600">
-          Aislin Group, founded by Mr. Vishal in 2010, is a trusted producer of high-quality herbal products, using modern technology and international standards for unmatched quality and personalized solutions.
-        </p>
+        We are one of the most trusted producers of these products with modern production technology and best quality standards. Aislin Group is established by a dynamic entrepreneur Mr. vishal in the year of 2010 with               Herbal products manufacturing unit. Aislin group manufacturing units compiled with international manufacturing standard.        </p>
 
        <Link to="/contact"> <button className="section-1-right-side-text-area-get-in-touch-btn" data-aos="zoom-in" data-aos-delay="800">
           GET IN TOUCH
