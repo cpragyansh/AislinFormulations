@@ -72,17 +72,14 @@ export default function About() {
 
                 <div className="about-us-text-section">
                     <h1 className="about-us-heading-green-color">Company Overview</h1>
-                    <h1 className="about-us-heading-green-color">Welcome to Aislin Formulations</h1>
+                    {/* <h1 className="about-us-heading-green-color">Welcome to Aislin Formulations</h1> */}
                     <h1 className="about-us-paara-heading">Enhancing Knowledge and Innovation Through Aislin Formulations, Your Path to Excellence.</h1>
                     <p className="about-us-paragraph">
 
-                        Aislin Formulations Private Limited, established in 2009, is a prominent manufacturer of Ayurvedic and nutritional products based in Delhi, India.
-
-                        Under the leadership of Managing Director Mr. Vishal Singla, the company has grown to operate a manufacturing unit in Rai, Haryana, adhering to international quality standards.
+                    Welcome to Aislin Formulations, a dynamic pharmaceutical company established in 2010. Specializing in the manufacturing of nutraceuticals, and ayurvedic products, we take pride in our cutting-edge third-party manufacturing unit. At Aislin, we blend innovation with tradition, harnessing the latest technologies and the wisdom of ancient practices to create products that promote health and wellness.
 
                     </p>
-                    <p className="about-us-paragraph">                         Aislin Formulations offers a diverse range of products, including Ayurvedic juices, syrups, creams, ointments, and nutritional dietary supplements, serving both human and veterinary needs. The company is committed to delivering high-quality, research-backed products to promote health and well-being. Their registered address is C-5/2A, Rana Pratap Bagh, Delhi, and the manufacturing facility is located at 1296, HSIIDC, Industrial Estate, Rai, Haryana 131029.
-                    </p>
+                    <p className="about-us-paragraph">       With a strong commitment to quality and safety, every product bearing the Aislin name undergoes rigorous testing and adheres to the highest industry standards. Our dedicated team of experts ensures that each formulation is crafted with precision and care, catering to the diverse needs of our customers worldwide. Whether you’re a healthcare professional, distributor, or consumer, trust Aislin to deliver excellence in every product, empowering you to live a healthier, happier life.          </p>
                     <button className="about-us-getintouchbtn">Get in touch -</button>
                 </div>
             </div>
