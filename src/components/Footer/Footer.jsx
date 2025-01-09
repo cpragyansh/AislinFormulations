@@ -48,7 +48,7 @@ export default function Footer () {
 <div className="footer-col-3-list-items">
 <p className="footer-col-3-para"><p className="footer-call-text">Call:</p> <a href=" tel:+91 9696969696">+91 969696969696</a></p>
 <p className="footer-col-3-para"><a href="mailto: info@aislinformulation.com" className='footer-email-text'><p className="footer-call-text">Email:</p> info@aislinformulation.com</a></p>
-<p className="footer-col-3-para"><p className="footer-address-main-head-heading">Address:</p>  HSIDC Road Rai, Sector 14, Sonipat-131001, Haryana, India</p>
+<p className="footer-col-3-para"><p className="footer-address-main-head-heading">Address:HSIDC Road Rai, Sector 14, Sonipat-131001, Haryana, India</p>  </p>
 </div>
 </div>
 

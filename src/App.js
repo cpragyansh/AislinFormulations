@@ -21,6 +21,7 @@ import Overview from "./about/Overview";
 import Whyaislin from "./about/Whyaislin";
 import Management from "./about/Management";
 import Mission_vision from "./about/Mission_vision";
+import Ayurvedic from "./Products/Ayurvedic";
 // import Values from "./about/Values";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/capsules" element={<Capsules />} />
           <Route path="/syrups" element={<Syrups />} />
           <Route path="/sachets" element={<Sachets />} />
+          <Route path="/ayurvedic" element={<Ayurvedic />} />
           <Route path="/powder" element={<Powder />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/safety" element={<Safety />} />

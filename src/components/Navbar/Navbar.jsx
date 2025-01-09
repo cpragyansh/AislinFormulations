@@ -85,7 +85,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-certificate-title-head">
         <h1 className="naavbar-certification-1-name">GMP Certified Company</h1>
-        <p className="navbar-certifications-1-number">783432983444</p>
+        <p className="navbar-certifications-1-number">AF2308096</p>
       </div>
     </div>
     <div className="navbar-certifications-1">
@@ -93,8 +93,8 @@ const Navbar = () => {
         <img src="assets/reward.png" alt="GMP Reward Logo" className="gmp-certification-reward-logo" />
       </div>
       <div className="navbar-certificate-title-head">
-        <h1 className="naavbar-certification-1-name">GMP Certified Company</h1>
-        <p className="navbar-certifications-1-number">88998326721</p>
+        <h1 className="naavbar-certification-1-name">ISO 22000:2018 Cerified</h1>
+        <p className="navbar-certifications-1-number">QUALITY MANAGEMENT SYSTEM</p>
       </div>
     </div>
   </div>
@@ -188,6 +188,11 @@ const Navbar = () => {
                 <li>
                   <Link to="/syrups" onClick={closeMenu}>
                   Nutraceutical Syrups
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ayurvedic" onClick={closeMenu}>
+                  Ayurvedic
                   </Link>
                 </li>
               </ul>
