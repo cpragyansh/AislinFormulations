@@ -316,7 +316,7 @@
 /* Right Side Boxes */
 .right-side-boxes-area-section-2-container {
   width: 90%;
-  max-width: 60rem;
+  max-width: 40vw;
   min-height: 60vh;
   background-image: url("../../public/assets/1.png");
   background-position: center;
@@ -329,19 +329,20 @@
   padding: 2em;
   gap: 2em;
   position: relative;
-  top: 10em
+  top: 10em;
+  overflow: hidden;
+  padding-left: 4em;
   ;
 }
 
-.section-2-boxes-main-container {
+/* .section-2-boxes-main-container {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 0.8rem;
   width: 100%;
   justify-content: center;
-}
+} */
 
-.section-2-text-boxes {
+/* .section-2-text-boxes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -352,41 +353,199 @@
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 3; /* Ensures boxes stay above the green box */
-}
-.section-2-main-container::after {
+  z-index: 3; 
+} */
+/* .section-2-main-container::after {
   content: "";
   width: 100%;
-  height: 30%; /* Adjust this value based on how much space the green box needs */
+  height: 30%;
   position: absolute;
   bottom: 0;
   background: transparent;
-}
-.section-2-box-main-heading {
+} */
+/* .section-2-box-main-heading {
   font-size: 5.5vw;
   max-width: 62%;
   border-left: 6px solid #4caf50;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
-}
+} */
 
-.section-2-box-paragraph {
+/* .section-2-box-paragraph {
   font-size: 3.5vw;
   line-height: 1.5;
-}
+} */
 
-.section-2-horizontal-line-boxes {
+/* .section-2-horizontal-line-boxes {
   width: 100%;
   height: 1px;
   background-color: grey;
+} */
+/* .section-2-boxes-main-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 1rem;
+  width: 110%; 
+  justify-content: flex-start; 
+  transform: translateX(-10%); 
+} */
+/* Right Side Box Container */
+.right-side-boxes-area-section-2-container {
+  width: 100%;
+  max-width: 50vw;
+  min-height: 60vh;
+  background-image: url("../../public/assets/1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 2em;
+  gap: 2em;
+  position: relative;
+  top: 10em;
+  overflow: hidden;
+  padding-left: 4em;
+  transition: all 0.3s ease;
 }
+
+/* Slider Container */
+.section-2-slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px; /* Add padding to prevent cutting */
+}
+
+/* Main Container for Boxes */
 .section-2-boxes-main-container {
   display: flex;
-  flex-wrap: nowrap; /* Prevents wrapping of boxes */
-  gap: 1rem;
-  width: 110%; /* Extends beyond the green box's width */
-  justify-content: flex-start; /* Aligns boxes to the left */
-  transform: translateX(-10%); /* Creates the left overflow effect */
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 0 10px; /* Add padding to prevent cut-off */
+  width: 100%;
+  box-sizing: border-box; /* Ensure proper width calculation */
+  scroll-padding: 20px;
+  padding-left: 14em;
+   /* Hide scrollbar */
+   -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+   scrollbar-width: none; /* For Firefox */
+  /* padding-right: 4em; */
+  /* Prevent the first and last items from being cut off */
+}
+
+/* Individual Text Boxes */
+.section-2-text-boxes {
+  flex: 0 0 200px; /* Adjust width */
+  height: 250px; /* Make the box taller */
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-2-text-boxes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.section-2-box-main-heading {
+  width: 40%;
+  border-left: 4px solid green;
+  padding-left: 1vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Paragraph Style */
+.section-2-box-paragraph {
+  margin-top: -1em;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Horizontal Line */
+.section-2-horizontal-line-boxes {
+  width: 100%;
+  border: 1px dotted grey;
+  margin-top: 10px;
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-left {
+  left: 10px;
+}
+
+.scroll-right {
+  right: 10px;
+}
+
+.section-2-slider-container:hover .scroll-arrow {
+  display: flex; /* Show arrows on hover */
+}
+
+.scroll-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.scroll-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .right-side-boxes-area-section-2-container {
+    max-width: 80vw;
+    padding-left: 2em;
+  }
+
+  .section-2-text-boxes {
+    flex: 0 0 150px; /* Adjust width for smaller screens */
+    height: 220px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-2-text-boxes {
+    flex: 0 0 100%; /* Full width on small screens */
+    height: auto; /* Auto height for better text fit */
+  }
+
+  .section-2-box-main-heading {
+    font-size: 1.2rem; /* Smaller heading on small screens */
+  }
+
+  .section-2-box-paragraph {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
 }
 
 /* Media Queries with Ranges */
@@ -935,11 +1094,11 @@ padding-bottom: 2em;
 
 /* Left Image Container */
 .imported-section-3-main-image-left {
-  height: 100vh;
-  max-width: 80%;
+  height: 80vh;
+  max-width: 70%;
    /* Ensures the image scales properly */
   object-fit: cover; /* Maintains aspect ratio */
-  margin-top: 4em;
+  /* margin-top: 4em; */
   border-radius: 60px;
   margin-left: 4vw;
   /* margin: auto; */

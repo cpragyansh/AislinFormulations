@@ -21,37 +21,37 @@ export default function About() {
 
 
 
-    const animateNumbers = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const counters = sectionRef.current.querySelectorAll(".section-5-number");
-          counters.forEach((counter) => {
-            const target = +counter.parentElement.getAttribute("data-target");
-            let current = 0;
-            const increment = Math.ceil(target / 100); // Adjust speed
+    // const animateNumbers = (entries, observer) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       const counters = sectionRef.current.querySelectorAll(".section-5-number");
+    //       counters.forEach((counter) => {
+    //         const target = +counter.parentElement.getAttribute("data-target");
+    //         let current = 0;
+    //         const increment = Math.ceil(target / 100); // Adjust speed
 
-            const updateCounter = () => {
-              current += increment;
-              if (current > target) {
-                counter.textContent = `${target}+`;
-              } else {
-                counter.textContent = `${current}+`;
-                requestAnimationFrame(updateCounter);
-              }
-            };
-            updateCounter();
-          });
-          observer.disconnect(); // Stop observing once animation starts
-        }
-      });
-    };
+    //         const updateCounter = () => {
+    //           current += increment;
+    //           if (current > target) {
+    //             counter.textContent = `${target}+`;
+    //           } else {
+    //             counter.textContent = `${current}+`;
+    //             requestAnimationFrame(updateCounter);
+    //           }
+    //         };
+    //         updateCounter();
+    //       });
+    //       observer.disconnect(); // Stop observing once animation starts
+    //     }
+    //   });
+    // };
 
-    const observer = new IntersectionObserver(animateNumbers, options);
-    observer.observe(sectionRef.current);
+    // const observer = new IntersectionObserver(animateNumbers, options);
+    // observer.observe(sectionRef.current);
 
-    return () => {
-      observer.disconnect();
-    };
+    // return () => {
+    //   observer.disconnect();
+    // };
   }, []);
 
     return (
@@ -72,7 +72,6 @@ export default function About() {
 
                 <div className="about-us-text-section">
                     <h1 className="about-us-heading-green-color">Company Overview</h1>
-                    {/* <h1 className="about-us-heading-green-color">Welcome to Aislin Formulations</h1> */}
                     <h1 className="about-us-paara-heading">Enhancing Knowledge and Innovation Through Aislin Formulations, Your Path to Excellence.</h1>
                     <p className="about-us-paragraph">
 
@@ -84,7 +83,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="section-3-main-container" data-aos="fade-in">
+            {/* <div className="section-3-main-container" data-aos="fade-in">
         <h1 className="section-3-heading">WHY CHOOSE AISLIN FORMULATIONS FOR THE THIRD PARTY MANUFACTURING</h1>
         <div className="about-main-text-box">
         
@@ -107,9 +106,9 @@ export default function About() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
-            <div className="mistion-main-head-container">
+            {/* <div className="mistion-main-head-container">
                 <h1 className="mission-vision-heading">MISSION, VISION & VALUES</h1>
                 <div className="mission-vision-boexes-main-container">
                     <div className="mission-box-1">
@@ -134,8 +133,8 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="section-5-number-main-container" ref={sectionRef} data-aos="fade-in">
+            </div> */}
+            {/* <div className="section-5-number-main-container" ref={sectionRef} data-aos="fade-in">
         <h1 className="section-5-head" data-aos="flip-up">Aislin at a glance</h1>
         <div className="section-5-number-colums" data-aos="fade-up">
           {[148, 200, 350, 1000, 202].map((number, i) => (
@@ -145,12 +144,10 @@ export default function About() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="partners-section">
-                {/* <img src="partners-section-bg.jpg" alt="" className="partners-section-bg" /> */}
+      </div> */}
+      {/* <div className="partners-section">
                 <div className="partners-section-text">
                     <div className="partners-section-bg-image-div-box">
-                        {/* <img src="assets/ourProducts.webp" alt="" className="partners-section-hands-img" /> */}
                     </div>
                     <div className="partners-images-text-div">
                         <div className="partners-section-text-box">
@@ -203,7 +200,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <div className="about-us-main-container override-image-why-aislin">
                 <div className="section-2-collage-images">
                  

@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Management() {
   return (
-    <div><div className="about-us-main-container">
+    <div>
+        <div className="about-us-main-container management-block-bg-color">
     <div className="section-2-collage-images">
      
 
@@ -11,14 +12,15 @@ export default function Management() {
     </div>
 
     <div className="about-us-text-section">
-        <h1 className="about-us-heading-green-color">Management</h1>
-        <h1 className="about-us-paara-heading">"Guided by Vision, Driven by Expertise – The Pillars of Aislin's Success."</h1>
+        {/* <h1 className="about-us-heading-green-color">Management</h1> */}
+        <h1 className="about-us-paara-heading">Our Leadership</h1>
         <p className="about-us-paragraph">
-        At Aislin Formulations, our management team is the cornerstone of our success, blending visionary thinking with unmatched expertise. Each leader brings a wealth of knowledge and a commitment to excellence, ensuring that our mission of delivering innovative and high-quality pharmaceutical solutions is realized. Their strategic foresight and dedication to fostering a culture of collaboration empower every team member to excel, driving Aislin forward in the ever-evolving healthcare landscape.
+       
+Welcome to Leeford Healthcare Limited, where innovation is driven by health and safety. When we embarked on this venture, our vision was clear: to transform healthcare and make a profound impact on the lives of people around the world. Today, we can proudly say that we have not only achieved that vision but surpassed it, thanks to the unwavering dedication, brilliance, and tireless efforts of our exceptional team.
 
 
         </p>
-        <p className="about-us-paragraph">                    The management at Aislin Formulations is more than just a team; it’s a dynamic force that bridges innovation with execution. With a focus on operational efficiency, compliance, and customer satisfaction, our leaders ensure that every decision aligns with our core values. Their unwavering commitment to quality and progress not only inspires trust among our partners but also positions Aislin as a trusted name in formulations and contract manufacturing. Together, they guide us toward a future of growth, excellence, and impactful solutions.        </p>
+        {/* <p className="about-us-paragraph">                    The management at Aislin Formulations is more than just a team; it’s a dynamic force that bridges innovation with execution. With a focus on operational efficiency, compliance, and customer satisfaction, our leaders ensure that every decision aligns with our core values. Their unwavering commitment to quality and progress not only inspires trust among our partners but also positions Aislin as a trusted name in formulations and contract manufacturing. Together, they guide us toward a future of growth, excellence, and impactful solutions.        </p> */}
         <button className="about-us-getintouchbtn">Get in touch -</button>
     </div>
 </div>

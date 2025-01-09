@@ -16,14 +16,14 @@ export default function Mission_vision() {
         </div>
         <div className="mission-box-1">
             <h1 className="mission-box-head">Vision</h1>
-            <img src="assets/Industry-blue-1.png" alt="" className="mission-box-image" />
+            <img src="assets/blue-eye.png" alt="" className="mission-box-image blue-reward-value" />
             <p className="mission-box-para">
             We aim to be a global leader in herbal healthcare, setting benchmarks for quality and trust. By 2030, we envision becoming a household name, promoting harmony with nature and holistic well-being worldwide.
             </p>
         </div>
         <div className="mission-box-1">
             <h1 className="mission-box-head">Values</h1>
-            <img src="assets/Industry-blue-1.png" alt="" className="mission-box-image" />
+            <img src="assets/blue-reward.png" alt="" className="mission-box-image blue-eye-mission" />
             <p className="mission-box-para">
          innovation, sustainability, and excellence drive Aislin Formulations to deliver unmatched quality and empower wellness. We prioritize customer satisfaction and long-lasting relationships while staying committed to environmental responsibility.
             </p>

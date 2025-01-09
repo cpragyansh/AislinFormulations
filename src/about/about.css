@@ -256,8 +256,8 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   margin: auto;
   
 }
@@ -272,11 +272,39 @@
 .management-img{
   height: 30em;
   width: 30em;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .whyaislin{
-  width: 30em;
-  height: 30em;
+  width: 40vw;
+  height: 80vh;
   border-radius: 60px;
   
+}
+.management-block-bg-color{
+  background-color:#bbdcf9;
+}
+.whyaislin-p-new{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* .why-aislin-text-section-closer{
+  display: flex;
+} */
+.why-aislin-closer-heading-m{
+  margin-bottom: -0.5vh;
+}
+.why-aislin-closer-para-m{
+  margin-top: -1em;
+}
+.mission-box-image{
+  height: 12vh;
+}
+.blue-eye-mission{
+  width: 4vw;
+  height:12vh;
+}
+.blue-reward-value{
+  height:10vh;
+  width: 8vw;
 }

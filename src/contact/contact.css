@@ -6,14 +6,15 @@
 
 
 form {
-  max-width: 40vw;
+  max-width: 30vw;
   padding: 4em;
   text-align: center;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   background-color: rgb(255, 255, 255);
-  background-size: 100vw;
+  /* background-size: 100vw; */
   display: flex;
-margin-top: -30em;
+margin-top: 4em;
+margin-bottom: 2em;
 box-shadow: 1px 1px 20px 1px black;
 border-radius: 20px;
   flex-direction: column;
@@ -21,9 +22,9 @@ border-radius: 20px;
   align-items: center;
 }
 .contact-us-form{
-  background-image: url("../../public/assets/ccontact-bg-22.png");
-  width: 100%;
-  height: 60vh;
+  /* background-image: url("../../public/assets/ccontact-bg-22.png"); */
+  /* width: auto; */
+  /* height: 60vh; */
 }
 
 input, textarea {
@@ -32,7 +33,7 @@ input, textarea {
   padding: 1em;
   border-radius: 8px;
   display: block;
-  width: 40vw;
+  width: 20vw;
   margin-top: 1em;
   font-family: 'Merriweather', sans-serif;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -96,15 +97,14 @@ textarea {
   font-size: 2.4em;
 }
 
-.contact-collage-images {
+/* .contact-collage-images {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid blck;
   padding-top: 4em;
-  /* padding-bottom: 20em; */
-}
+} */
 
 .contact-first-image {
   width: 80%; /* Adjust size relative to container for responsiveness */
@@ -113,38 +113,25 @@ textarea {
   border-radius: 20px;
 }
 
-.contact-second-image {
-  position: absolute;
-  bottom: -16vh; /* Adjust for smaller screens */
-  right: -6em; /* Adjust for smaller screens */
-  width: 80%; /* Adjust size relative to container */
-  max-width: 30vw;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 16px;
-}
+
 .contact-us-main-container{
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   /* gap: 4em; */
-}
-.contact-us-page-image-section{
   border: 2px solid black;
-  /* margin-bottom: 4em; */
-  /* background-image: url("../../public/assets/contact-page-bg-1.png"); */
   background-image: url("../../public/assets/alternate-contact-bg.png");
-  height: 80vh;
-  width:100%;
+  /* height: 80vh; */
+  /* width:100%; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: fill;
-  image-rendering: optimizeQuality;
   border: 2px solid white;
-  /* padding-bottom: 10em; */
 }
+
 .contact-us-page-google-map-embedded{
   width: 100%;
   height: 60vh;
@@ -197,8 +184,44 @@ textarea {
     /* width: 100%; */
     height: 20vh;
     background-image: url("../../public/assets/ccontact-bg-22.png");
+}
+.contact-page-twoblock-flex-box-making{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 }
 
 
+.conact-page-information-box{
+  background-image: url("../../public/assets/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+background-size: cover;
+  object-fit: cover;
+
+  border:8px solid rgb(210, 212, 204);
+  width: 30vw;
+  height:50vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.contact-page-information-heading{
+  color: green;
+  text-align: center;
+}
+.contact-page-information-block-row-1{
+  margin-left: 2em;
+  text-align: start;
+}
+.contact-page-information-para{
+  color: white;
+  text-align: start;
+  font-size: 20px;
 }

@@ -3,7 +3,31 @@ import React from 'react'
 export default function Whyaislin() {
   return (
     <div>
+  <div className="about-us-main-container management-block-bg-color">
+    <div className="section-2-collage-images">
+     
 
+
+        <img src="assets/png3.png" alt="" className="about-page-main-section-1-image why-aislin-img" />
+    </div>
+
+    <div className="about-us-text-section why-aislin-text-section-closer">
+        {/* <h1 className="about-us-heading-green-color">Management</h1> */}
+        <h1 className="about-us-paara-heading why-aislin-closer-heading-m">we care to serve you better</h1>
+        
+        <p className="about-us-paragraph whyaislin-p-new ">
+       
+        More than pills, more than care.
+
+        </p>
+        <p className="about-us-paragraph whyaislin-p-new why-aislin-closer-para-m ">
+       
+        Leeford: We heal, we inspire, we build a better future.
+        </p>
+        {/* <p className="about-us-paragraph">                    The management at Aislin Formulations is more than just a team; it’s a dynamic force that bridges innovation with execution. With a focus on operational efficiency, compliance, and customer satisfaction, our leaders ensure that every decision aligns with our core values. Their unwavering commitment to quality and progress not only inspires trust among our partners but also positions Aislin as a trusted name in formulations and contract manufacturing. Together, they guide us toward a future of growth, excellence, and impactful solutions.        </p> */}
+        <button className="about-us-getintouchbtn">Get in touch -</button>
+    </div>
+</div>
 <div className="about-us-main-container override-image-why-aislin">
                 <div className="section-2-collage-images">
                  
@@ -25,50 +49,36 @@ export default function Whyaislin() {
                 </div>
             </div>
 
-            {/* <div className="management-main-below-part-text-area">
+            <div className="management-main-below-part-text-area">
     <div className="inner-div-management-area-part">
         <h1 className="management-text-area-parts-heading">Expertise in Formulations</h1>
         <p className="management-area-text-area-portion-written">
-        Decades of experience in pharmaceutical and healthcare formulations.
+        With decades of experience in the pharmaceutical and healthcare industries, Aislin Formulations excels in creating high-quality, innovative solutions. Our advanced R&D capabilities and state-of-the-art laboratories enable us to develop safe, effective, and sustainable formulations tailored to meet the specific needs of the healthcare sector, ensuring we stay ahead of industry trends and improve patient outcomes.
         </p>
-        <p className="management-area-text-area-portion-written">
-        Advanced R&D capabilities to create innovative solutions.
-        </p>
+       
     </div>
     <div className="inner-div-management-area-part">
         <h1 className="management-text-area-parts-heading">Commitment to Quality</h1>
         <p className="management-area-text-area-portion-written">
-        Adherence to global standards of safety and efficacy.
-        </p>
-        <p className="management-area-text-area-portion-written">
-        Robust quality control processes at every stage of production.
-
-        </p>
+        At Aislin Formulations, we are committed to maintaining the highest standards of quality in every aspect of our production process. We adhere strictly to global safety and efficacy standards, ensuring that every product meets the most rigorous benchmarks. Our robust quality control processes are implemented at every stage of production, from raw material selection to final product testing, ensuring that our customers receive only the safest and most effective formulations. This commitment to excellence is at the core of our operations, guaranteeing the trust and satisfaction of        </p>
+       
        
     </div>
     <div className="inner-div-management-area-part">
         <h1 className="management-text-area-parts-heading">Tailored Solutions</h1>
         <p className="management-area-text-area-portion-written">
-        Customized formulations to meet unique client needs.
-        </p>
-        <p className="management-area-text-area-portion-written">
-        Flexible and scalable production capabilities.
-
-        </p>
+        At Aislin Formulations, we specialize in creating customized formulations designed to meet the unique needs of each client. Our team works closely with clients to understand their specific requirements, allowing us to develop solutions that align with their goals. With flexible and scalable production capabilities, we can adapt to varying production volumes and ensure that each formulation is tailored to the highest standards. Whether it's for niche markets or large-scale production, our approach ensures that clients receive products that are both effective and reliable, catering to their precise needs.        </p>
+       
        
     </div>
     <div className="inner-div-management-area-part">
         <h1 className="management-text-area-parts-heading">Global Reach</h1>
         <p className="management-area-text-area-portion-written">
-        Serving clients across multiple countries and regions.
-        </p>
-        <p className="management-area-text-area-portion-written">
-        Understanding diverse market needs to deliver impactful solutions.
-
-        </p>
+        Aislin Formulations proudly serves clients across multiple countries and regions, expanding our footprint in the global healthcare market. With a deep understanding of diverse market needs, we are able to deliver impactful solutions that resonate with local preferences and requirements. Our expertise in navigating international regulations and standards allows us to provide high-quality formulations tailored to each region's specific demands. Whether addressing emerging market needs or established industry standards, we ensure our products and services have a meaningful and positive impact worldwide.        </p>
+        
        
     </div>
-</div> */}
+</div>
 
 
     </div>

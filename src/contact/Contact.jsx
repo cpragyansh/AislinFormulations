@@ -5,25 +5,14 @@ import aboutBackground from '../2.png';
 export default function Contact() {
   return (
     <div>
-  <Mainpage
+  {/* <Mainpage
         title="CONTACT US"
         backgroundImage={aboutBackground} // Pass the local image as a prop
-      />
+      /> */}
       
-<h1 className='contact-main-heading'>Have a Question? Get In Touch</h1>
+{/* <h1 className='contact-main-heading'>Have a Question? Get In Touch</h1> */}
 
-<div className="contact-us-main-container">
-<div className="contact-us-page-image-section">
-
-
-
-</div>
-<div className="contact-us-page-google-map-embedded">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.863759507704!2d77.08439597514233!3d28.932094675502512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dab9305555555%3A0x447cafe388f6cfe2!2sAislin%20Formulation%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1734873223563!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='google-map-contact'></iframe>
-</div>
-
-
-
+<div className="contact-us-main-container contact-us-page-image-section">
   <div className="contact-us-form">
 <form classNames="cf">
     <p className="contact-page-form-text-1">Contact Us</p>
@@ -38,6 +27,21 @@ export default function Contact() {
   </div>  
   <input type="submit" value="Submit" id="input-submit"/>
 </form>
+</div>
+
+<div className="conact-page-information-box">
+  <div className="contact-page-information-block-row-1">
+    <h1 className="contact-page-information-heading">Phone Number</h1>
+    <p1 className="contact-page-information-para">123456789</p1>
+  </div>
+  <div className="contact-page-information-block-row-1">
+    <h1 className="contact-page-information-heading">Email Address</h1>
+    <p1 className="contact-page-information-para">aislin@gmail.com</p1>
+  </div>
+  <div className="contact-page-information-block-row-1">
+    <h1 className="contact-page-information-heading">Address Info</h1>
+    <p1 className="contact-page-information-para">abcdedhar udhar okay</p1>
+  </div>
 </div>
 </div>
     </div>

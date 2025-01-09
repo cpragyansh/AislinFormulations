@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect,useState } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 import { Link } from "react-router-dom"; 
 // Import Link from react-router-dom
@@ -12,6 +12,34 @@ import 'aos/dist/aos.css';
 export default function Dashboard() {
   const sliderRef = useRef(null);
   const sectionRef = useRef(null);
+//   const scrollContainer = (distance) => {
+//     const container = document.querySelector('.section-2-boxes-main-container');
+//     container.scrollBy({
+//       left: distance,
+//       behavior: 'smooth',
+//     });
+//   };
+//   const toggleArrows = (isVisible) => {
+//   const arrows = document.querySelectorAll('.scroll-arrow');
+//   arrows.forEach((arrow) => {
+//     arrow.style.display = isVisible ? 'flex' : 'none';
+//   });
+// };
+const [arrowsVisible, setArrowsVisible] = useState(false);
+
+  // Toggle arrows visibility
+  const toggleArrows = (visibility) => {
+    setArrowsVisible(visibility);
+  };
+
+  // Scroll container function
+  const scrollContainer = (scrollValue) => {
+    const container = document.querySelector('.section-2-boxes-main-container');
+    container.scrollBy({
+      left: scrollValue,
+      behavior: 'smooth',
+    });
+  };
 
   const scrollLeft = () => {
     sliderRef.current.scrollBy({
@@ -123,7 +151,7 @@ export default function Dashboard() {
         <div className="left-side-text-area-section-2container" data-aos="fade-right">
           <h1 className="section-2-party-manu-heading" data-aos="fade-up">Third Party Manufacturing</h1>
           <h1 className="section-2-text-area-heading" data-aos="fade-up" data-aos-delay="200">
-            Contract Manufacturing Or Third Party manufacturing of AYUSH products
+            Contract Manufacturing Or Third Party manufacturing of Ayurvedic and Nutracetical products
           </h1>
           <p className="section-2-text-area-paragraph" data-aos="fade-up" data-aos-delay="400">
             Aislin offers contract manufacturing to clients for a wide range of products that include nutraceuticals tablets, capsules, sachets, and also Herbal formulation. We have been providing the best quality products since 2010 to ensure good health. The main aim of our company is to provide standardized, researched, and best quality products to our clients. If you associate with Aislin Formulation for the Pharma third party facility, we guarantee you success. So, get in contact with us for the most competitive MOQ (Minimum Order Quantity) in the Pharma Industry. Get our quality-approved range of Pharma medicines and products along with contract manufacturing services.
@@ -133,40 +161,84 @@ export default function Dashboard() {
 
         {/* Right Boxes Area */}
         <div className="right-side-boxes-area-section-2-container">
-          <div className="green-color-big-box-container">
-            <div className="section-2-boxes-main-container">
+      <div className="green-color-big-box-container">
+        <div
+          className="section-2-slider-container"
+          onMouseEnter={() => toggleArrows(true)}
+          onMouseLeave={() => toggleArrows(false)}
+        >
+          {/* Left Arrow */}
+          {arrowsVisible && (
+            <button className="scroll-arrow scroll-left" onClick={() => scrollContainer(-300)}>
+              &lt; {/* Replace with an icon if needed */}
+            </button>
+          )}
 
-              {/* Cost Efficiency Box */}
-              <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="300">
-                <h1 className="section-2-box-main-heading">Cost Efficiency</h1>
-                <p className="section-2-box-paragraph">
-                  Space Healthcare provides high quality, affordable, and innovative healthcare products.
-                </p>
-                <hr className="section-2-horizontal-line-boxes" />
-              </div>
+          <div className="section-2-boxes-main-container">
+            {/* Cost Efficiency Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="300">
+              <h1 className="section-2-box-main-heading">Cost Efficiency</h1>
+              <p className="section-2-box-paragraph">
+                Space Healthcare provides high quality, affordable, and innovative healthcare products.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
+            </div>
 
-              {/* Highly Qualified Team Box */}
-              <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="500">
-                <h1 className="section-2-box-main-heading">Highly Qualified Team</h1>
-                <p className="section-2-box-paragraph">
-                  A dedicated and committed team of professionals. We combine a high level of teamwork with a skilled staff.
-                </p>
-                <hr className="section-2-horizontal-line-boxes" />
-              </div>
+            {/* Highly Qualified Team Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="500">
+              <h1 className="section-2-box-main-heading">Highly Qualified Team</h1>
+              <p className="section-2-box-paragraph">
+                A dedicated and committed team of professionals. We combine a high level of teamwork with a skilled staff.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
+            </div>
 
-              {/* Timely Delivery Box */}
-              <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="700">
-                <h1 className="section-2-box-main-heading">Timely Delivery</h1>
-                <p className="section-2-box-paragraph">
-                  We ensure timely delivery of quality products to the clients as quickly as possible.
-                </p>
-                <hr className="section-2-horizontal-line-boxes" />
-              </div>
+            {/* Timely Delivery Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="700">
+              <h1 className="section-2-box-main-heading">Timely Delivery</h1>
+              <p className="section-2-box-paragraph">
+                We ensure timely delivery of quality products to the clients as quickly as possible.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
+            </div>
 
+            {/* Environment Friendly Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="700">
+              <h1 className="section-2-box-main-heading">Environment Friendly</h1>
+              <p className="section-2-box-paragraph">
+                Constantly educating the team and giving incentives to keep the environment clean.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
+            </div>
+
+            {/* Highly Quality Products Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="700">
+              <h1 className="section-2-box-main-heading">Highly Quality Products</h1>
+              <p className="section-2-box-paragraph">
+                We ensure that our products are of good quality and fulfill all the required standards.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
+            </div>
+
+            {/* Zero Debt Company Box */}
+            <div className="section-2-text-boxes" data-aos="fade-up" data-aos-delay="700">
+              <h1 className="section-2-box-main-heading">Zero Debt Company</h1>
+              <p className="section-2-box-paragraph">
+                Ability to invest for future projects and create infrastructure as per customer's requirements.
+              </p>
+              <hr className="section-2-horizontal-line-boxes" />
             </div>
           </div>
-        </div>
 
+          {/* Right Arrow */}
+          {arrowsVisible && (
+            <button className="scroll-arrow scroll-right" onClick={() => scrollContainer(300)}>
+              &gt; {/* Replace with an icon if needed */}
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
       </div>
     </div>
 
@@ -200,7 +272,7 @@ export default function Dashboard() {
               <h1 className="imported-section-3-block-main-heading">Our Vision</h1>
             </div>
             <p className="imported-section-3-block-main-para">
-              To provide prompt and affordable Healthcare Medicines worldwide.
+            To deliver high-quality, innovative healthcare solutions for better well-being.
             </p>
           </div>
 
@@ -211,7 +283,7 @@ export default function Dashboard() {
               <h1 className="imported-section-3-block-main-heading">Our Mission</h1>
             </div>
             <p className="imported-section-3-block-main-para">
-              To provide prompt and affordable Healthcare Medicines worldwide.
+            To be a global leader in providing accessible and effective pharmaceutical products.
             </p>
           </div>
 
@@ -271,7 +343,7 @@ export default function Dashboard() {
             </h1>
             {/* <hr className="hr-below-section-4-heading" /> */}
             <p className="partners-section-para">
-              Aislin Formulations is a leading manufacturer of Ayurvedic and nutritional products, committed to delivering high-quality solutions for both human and veterinary needs. Established in 2009, the company offers a diverse range of products, including Ayurvedic juices, syrups, creams, ointments, and nutritional dietary supplements. Each product is carefully formulated using natural ingredients, ensuring safety, efficacy, and adherence to international quality standards. Aislin Formulations is dedicated to enhancing health and well-being through innovative, research-backed products that support overall wellness and promote optimal health. The company’s commitment to quality and customer satisfaction is at the core of its operations.
+              Aislin Formulations is a leading manufacturer of Ayurvedic and nutritional products, committed to delivering high-quality solutions. Established in 2010, the company offers a diverse range of products, including syrups, ointments, and nutritional dietary supplements. Each product is carefully formulated using natural ingredients, ensuring safety, efficacy, and adherence to international quality standards. Aislin Formulations is dedicated to enhancing health and well-being through innovative, research-backed products that support overall wellness and promote optimal health. The company’s commitment to quality and customer satisfaction is at the core of its operations.
             </p>
           </div>
 
@@ -325,16 +397,23 @@ export default function Dashboard() {
 
       {/* Section 5 */}
       <div className="section-5-number-main-container" ref={sectionRef} data-aos="fade-in">
-        <h1 className="section-5-head" data-aos="flip-up">Aislin at a glance</h1>
-        <div className="section-5-number-colums" data-aos="fade-up">
-          {[148, 200, 350, 1000, 202].map((number, i) => (
-            <div className="section-5-cols" data-target={number} key={i} data-aos="fade-right">
-              <h1 className="section-5-number" data-aos="fade-left">0</h1>
-              <p className="section-5-number-text" data-aos="fade-left">Medicines</p>
-            </div>
-          ))}
-        </div>
+  <h1 className="section-5-head" data-aos="flip-up">Aislin at a glance</h1>
+  <div className="section-5-number-colums" data-aos="fade-up">
+    {[
+      { number: 450, label: "Medicines" },
+      { number: 860, label: "Products" },
+      { number: 320, label: "Clients" },
+      { number: 1000, label: "Partners" },
+      { number: 202, label: "Awards" }
+    ].map((item, i) => (
+      <div className="section-5-cols" data-target={item.number} key={i} data-aos="fade-right">
+        <h1 className="section-5-number" data-aos="fade-left">{item.number}</h1>
+        <p className="section-5-number-text" data-aos="fade-left">{item.label}</p>
       </div>
+    ))}
+  </div>
+</div>
+
 
 
     </div>
