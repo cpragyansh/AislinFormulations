@@ -7,7 +7,7 @@ export default function Management() {
      
 
 
-        <img src="assets/about-page-first-img.png" alt="" className="about-page-main-section-1-image" />
+        <img src="assets/png3.png" alt="" className="about-page-main-section-1-image management-img" />
     </div>
 
     <div className="about-us-text-section">

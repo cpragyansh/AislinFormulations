@@ -269,3 +269,14 @@
   font-size: 24px;
   font-weight: 600;
 }
+.management-img{
+  height: 30em;
+  width: 30em;
+  border-radius: 50%;
+}
+.whyaislin{
+  width: 30em;
+  height: 30em;
+  border-radius: 60px;
+  
+}

@@ -9,7 +9,7 @@ export default function Whyaislin() {
                  
 
 
-                    <img src="assets/about-page-first-img.png" alt="" className="about-page-main-section-1-image" />
+                    <img src="assets/png5.png" alt="" className="about-page-main-section-1-image whyaislin" />
                 </div>
 
                 <div className="about-us-text-section override-why-aislin-text">
