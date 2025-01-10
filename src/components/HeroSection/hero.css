@@ -223,9 +223,10 @@
         
     }
     .hero-text-para {
-        font-size: 1rem;
-        width: 40rem;
-        /* width: 90%; */
+        font-size: 0.8rem;
+        width: 80vw;
+        margin-top: 0.1em;
+        width: 100%;
     }
     .hero-section-know-more-btn {
         width: 24vw;

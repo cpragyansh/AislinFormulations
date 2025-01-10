@@ -16,7 +16,7 @@ export default function Management() {
         <h1 className="about-us-paara-heading">Our Leadership</h1>
         <p className="about-us-paragraph">
        
-Welcome to Leeford Healthcare Limited, where innovation is driven by health and safety. When we embarked on this venture, our vision was clear: to transform healthcare and make a profound impact on the lives of people around the world. Today, we can proudly say that we have not only achieved that vision but surpassed it, thanks to the unwavering dedication, brilliance, and tireless efforts of our exceptional team.
+Welcome to Aislin Formulations pvt Limited, where innovation is driven by health and safety. When we embarked on this venture, our vision was clear: to transform healthcare and make a profound impact on the lives of people around the world. Today, we can proudly say that we have not only achieved that vision but surpassed it, thanks to the unwavering dedication, brilliance, and tireless efforts of our exceptional team.
 
 
         </p>

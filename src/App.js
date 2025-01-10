@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import { Route, Routes } from "react-router-dom";
+import Layout from './Layout';  // Import the Layout component
 import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./Dashboard/Dashboard";
 import Footer from "./components/Footer/Footer";
@@ -36,11 +37,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* Show Loader while loading */}
       {isLoading ? (
         <Loader />
       ) : (
+        <Layout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -60,11 +62,12 @@ function App() {
           <Route path="/overview" element={<Overview />} />
           <Route path="/whyaislin" element={<Whyaislin />} />
           <Route path="/Management" element={<Management />} />
-          <Route path="/Mission_vision" element={<Mission_vision/>} />
+          <Route path="/Mission_vision" element={<Mission_vision />} />
 
         </Routes>
+        </Layout>
       )}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
